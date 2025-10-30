@@ -84,6 +84,13 @@
     </svg>
     <div id="root"></div>
 
+    <script>
+      window.process = {
+        env: {
+          BRAVE_SEARCH_API_KEY: 'BSA1DI7S-rd16y_1nTJH3ASACNO5tq0'
+        }
+      };
+    </script>
     <script type="text/babel" data-type="module">
       import React, { useState, useRef, useEffect, useCallback, forwardRef, useImperativeHandle } from 'react';
       import ReactDOM from 'react-dom/client';
@@ -155,7 +162,8 @@
           voteForMe: '投票給我',
           walletRequired: '需要 Web3 錢包',
           walletRequiredDesc: '您的瀏覽器似乎沒有安裝 Web3 錢包。請安裝錢包擴充功能後再試一次。',
-          braveWallet: '取得 Brave 錢包',
+          braveWallet: 'Brave 錢包',
+          web3Wallet: 'Web3 錢包',
           metaMask: '取得 MetaMask',
           binanceWallet: '取得幣安錢包',
           okxWallet: '取得 OKX 錢包',
@@ -164,6 +172,7 @@
           connectToMintDesc: '您需要連接錢包才能鑄造 NFT。',
           toggleControls: '切換工具列',
           braveDonation: '關於 BAT 小費',
+          braveDonate: 'Brave 打賞',
           braveDonationDesc: '.brave 域名目前尚無法透過 Brave Creator 進行驗證，但我們仍歡迎您透過標準的 BAT 小費功能給予支持。非常感謝！',
           visitBraveWallet: '訪問 Brave 錢包',
           acknowledgements: '致謝與技術棧',
@@ -182,6 +191,16 @@
           noResults: '找不到結果',
           searchError: '搜尋時發生錯誤',
           braveSearchCredit: '搜尋結果由 Brave Search 提供',
+          thanksToBrave: '特別感謝 Brave',
+          thanksToBraveDesc: '本網站的創作靈感與許多功能的實現，都離不開 Brave 生態系的啟發與支持。Brave 不僅是一個瀏覽器，更是一個致力於保護使用者隱私、重塑網路經濟的創新平台。',
+          braveBrowser: 'Brave 瀏覽器',
+          braveBrowserDesc: '快速、安全且注重隱私的瀏覽器，內建廣告攔截功能。',
+          braveSearch: 'Brave 搜尋',
+          braveSearchDesc: '一個真正獨立的隱私搜尋引擎，不追蹤您的搜尋紀錄。',
+          braveWallet: 'Brave 錢包',
+          braveWalletDesc: '直接嵌入瀏覽器的安全加密錢包。無需擴充程序，無需額外步驟，不易受到偽造應用程式、網路釣魚和竊盜的影響。',
+          braveRewards: 'Brave 獎勵',
+          braveRewardsDesc: '透過觀看尊重隱私的廣告來賺取 BAT 代幣，並支持您喜愛的創作者。',
           calligraphers: [
             { id: 1, name: '王羲之', era: '東晉, 303－361', portrait: 'https://bkimg.cdn.bcebos.com/pic/7af40ad162d9f2d3572c178caeba9d13632762d06600?x-bce-process=image/format,f_auto/quality,Q_70/resize,m_lfit,limit_1,w_536', works: [{ name: '〈蘭亭序〉', url: 'https://images1.epochhk.com/pictures/57658/300000673757131242125868223@1200x1200.jpg' }, { name: '〈快雪時晴帖〉', url: 'https://theme.npm.edu.tw/khan/att/collection/03009165/17000136.jpg' }], style: '主要風格：行書、楷書兼擅。', features: '風格特色：筆勢圓潤流暢、結構嚴謹、氣韻生動，被尊為「書聖」。' },
             { id: 2, name: '王獻之', era: '東晉, 344－386', portrait: 'https://bkimg.cdn.bcebos.com/pic/80cb39dbb6fd5266d016b5fbac56802bd40734fa9884?x-bce-process=image/format,f_auto', works: [{ name: '〈中秋帖〉', url: 'https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=463451&randomCode=14594599283' }, { name: '〈鴨頭丸帖〉', url: 'https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=478972&randomCode=82271322860' }], style: '主要風格：行草書。', features: '風格特色：自由灑脫、筆畫靈動；風格繼承父法而更富變化。' },
@@ -258,7 +277,8 @@
           voteForMe: 'Vote for Me',
           walletRequired: 'Web3 Wallet Required',
           walletRequiredDesc: 'It seems your browser does not have a Web3 wallet installed. Please install a wallet extension to continue.',
-          braveWallet: 'Get Brave Wallet',
+          braveWallet: 'Brave Wallet',
+          web3Wallet: 'Web3 Wallet',
           metaMask: 'Get MetaMask',
           binanceWallet: 'Get Binance Wallet',
           okxWallet: 'Get OKX Wallet',
@@ -267,6 +287,7 @@
           connectToMintDesc: 'You need to connect your wallet to mint an NFT.',
           toggleControls: 'Toggle Controls',
           braveDonation: 'About BAT Tipping',
+          braveDonate: 'Brave Donate',
           braveDonationDesc: '.brave domains cannot be verified through Brave Creators at this time. However, we still welcome your support via the standard BAT tipping feature. Thank you!',
           visitBraveWallet: 'Visit Brave Wallet',
           acknowledgements: 'Acknowledgements & Tech Stack',
@@ -285,6 +306,16 @@
           noResults: 'No results found.',
           searchError: 'An error occurred while searching.',
           braveSearchCredit: 'Search results powered by Brave Search',
+          thanksToBrave: 'Special Thanks to Brave',
+          thanksToBraveDesc: 'The creation of this website and the implementation of many of its features were greatly inspired and supported by the Brave ecosystem. Brave is more than just a browser; it is an innovative platform dedicated to protecting user privacy and reshaping the web economy.',
+          braveBrowser: 'Brave Browser',
+          braveBrowserDesc: 'A fast, secure, and private browser with a built-in ad blocker.',
+          braveSearch: 'Brave Search',
+          braveSearchDesc: "A truly independent and private search engine that doesn't track you or your queries.",
+          braveWallet: 'Brave Wallet',
+          braveWalletDesc: "A secure, encrypted wallet directly embedded in your browser. No extensions or extra steps required, and it's less susceptible to fake applications, phishing attacks, and theft.",
+          braveRewards: 'Brave Rewards',
+          braveRewardsDesc: 'Earn BAT tokens by viewing privacy-respecting ads and support your favorite creators.',
           calligraphers: [
             { id: 1, name: 'Wang Xizhi', era: 'Eastern Jin, 303–361', portrait: 'https://bkimg.cdn.bcebos.com/pic/7af40ad162d9f2d3572c178caeba9d13632762d06600?x-bce-process=image/format,f_auto/quality,Q_70/resize,m_lfit,limit_1,w_536', works: [{ name: 'Preface to the Orchid Pavilion', url: 'https://images1.epochhk.com/pictures/57658/300000673757131242125868223@1200x1200.jpg' }, { name: 'Timely Clearing After Snowfall', url: 'https://theme.npm.edu.tw/khan/att/collection/03009165/17000136.jpg' }], style: 'Main Style: Cursive and Regular scripts.', features: 'Style Features: Revered as the "Sage of Calligraphy," his brushwork is fluid and rounded, with a rigorous structure and lively spirit.' },
             { id: 2, name: 'Wang Xianzhi', era: 'Eastern Jin, 344–386', portrait: 'https://bkimg.cdn.bcebos.com/pic/80cb39dbb6fd5266d016b5fbac56802bd40734fa9884?x-bce-process=image/format,f_auto', works: [{ name: 'Mid-Autumn Letter', url: 'https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=463451&randomCode=14594599283' }, { name: 'Duck Head Pill Letter', url: 'https://digitalarchive.npm.gov.tw/Image/GetImage?imageId=478972&randomCode=82271322860' }], style: 'Main Style: Cursive and Semi-cursive scripts.', features: 'Style Features: Free and unrestrained, with agile strokes; his style builds on his father\'s foundation but with greater variation.' },
@@ -467,6 +498,15 @@
       );
       const HowToUseModal = ({ onClose, t }) => {
           const [showVideoPlayer, setShowVideoPlayer] = useState(false);
+          
+          useEffect(() => {
+              const handleKeyDown = (e) => {
+                  if (e.key === 'Escape') onClose();
+              };
+              window.addEventListener('keydown', handleKeyDown);
+              return () => window.removeEventListener('keydown', handleKeyDown);
+          }, [onClose]);
+
           return (
               React.createElement('div', { className: "fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in", onClick: onClose },
                   React.createElement('div', { className: "relative bg-paper/95 dark:bg-dark-bg/95 rounded-xl shadow-2xl border border-ink/10 dark:border-dark-text/10 p-6 w-full max-w-lg max-h-[90vh] overflow-y-auto", onClick: e => e.stopPropagation() },
@@ -504,24 +544,39 @@
                 React.createElement('p', { className: "text-ink-light dark:text-dark-text mb-6" }, t.walletRequiredDesc),
                 React.createElement('div', { className: "flex flex-col gap-3" },
                     React.createElement('a', { href: "https://brave.com/wallet/", target: "_blank", rel: "noopener noreferrer", className: "w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text" },
-                        React.createElement('img', { alt: "Brave Wallet", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg" }),
-                        React.createElement('span', null, t.braveWallet)
+                        React.createElement('img', { alt: "Brave Wallet", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Brave_lion_icon.svg/654px-Brave_lion_icon.svg.png" }),
+                        React.createElement('div', {className: 'text-left'},
+                            React.createElement('span', null, t.braveWallet),
+                            React.createElement('p', {className: 'text-xs font-normal text-ink-light/80 dark:text-dark-text/80'}, t.web3Wallet)
+                        )
                     ),
                     React.createElement('a', { href: "https://metamask.io/download/", target: "_blank", rel: "noopener noreferrer", className: "w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text" },
                         React.createElement('img', { alt: "MetaMask", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg" }),
-                        React.createElement('span', null, t.metaMask)
+                        React.createElement('div', {className: 'text-left'},
+                            React.createElement('span', null, t.metaMask),
+                            React.createElement('p', {className: 'text-xs font-normal text-ink-light/80 dark:text-dark-text/80'}, t.web3Wallet)
+                        )
                     ),
                     React.createElement('a', { href: "https://www.binance.com/en/wallet", target: "_blank", rel: "noopener noreferrer", className: "w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text" },
                         React.createElement('img', { alt: "Binance Wallet", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Binance_Logo.svg/480px-Binance_Logo.svg.png" }),
-                        React.createElement('span', null, t.binanceWallet)
+                        React.createElement('div', {className: 'text-left'},
+                            React.createElement('span', null, t.binanceWallet),
+                            React.createElement('p', {className: 'text-xs font-normal text-ink-light/80 dark:text-dark-text/80'}, t.web3Wallet)
+                        )
                     ),
                     React.createElement('a', { href: "https://www.okx.com/web3", target: "_blank", rel: "noopener noreferrer", className: "w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text" },
                         React.createElement('img', { alt: "OKX Wallet", className: "h-6 w-6", src: "https://play-lh.googleusercontent.com/N00SbjLJJrhg4hbdnkk3Llk2oedNNgCU29DvR9cpep7Lr0VkzvBkmLqajWNgFb0d7IOO" }),
-                        React.createElement('span', null, t.okxWallet)
+                        React.createElement('div', {className: 'text-left'},
+                            React.createElement('span', null, t.okxWallet),
+                            React.createElement('p', {className: 'text-xs font-normal text-ink-light/80 dark:text-dark-text/80'}, t.web3Wallet)
+                        )
                     ),
                     React.createElement('a', { href: "https://phantom.app/", target: "_blank", rel: "noopener noreferrer", className: "w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text" },
                         React.createElement('img', { alt: "Phantom Wallet", className: "h-6 w-6", src: "https://mintcdn.com/phantom-e50e2e68/fkWrmnMWhjoXSGZ9/resources/images/Phantom_SVG_Icon.svg?w=1100&fit=max&auto=format&n=fkWrmnMWhjoXSGZ9&q=85&s=d9602893116f9314145e2a303d675ccc" }),
-                        React.createElement('span', null, t.phantomWallet)
+                        React.createElement('div', {className: 'text-left'},
+                            React.createElement('span', null, t.phantomWallet),
+                            React.createElement('p', {className: 'text-xs font-normal text-ink-light/80 dark:text-dark-text/80'}, t.web3Wallet)
+                        )
                     )
                 )
             )
@@ -1066,11 +1121,11 @@
                         )
                     ),
                     React.createElement('button', { onClick: handleBatClick, className: `flex items-center gap-3 p-2 rounded-md w-full ${textColorClasses} hover:bg-ink/10 dark:hover:bg-dark-text/10` },
-                        React.createElement('img', { alt: "Brave Wallet", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg" }),
-                        React.createElement('span', null, "Brave Wallet")
+                        React.createElement('img', { alt: "Brave Donate", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg" }),
+                        React.createElement('span', null, t.braveDonate)
                     ),
                     React.createElement('button', { onClick: () => setLang(lang === 'zh-TW' ? 'en' : 'zh-TW'), className: `flex items-center gap-3 p-2 rounded-md w-full ${textColorClasses} hover:bg-ink/10 dark:hover:bg-dark-text/10` },
-                       React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M3 5h12M9 3v2m4 13l4-4M19 17v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2m14-8a2 2 0 10-4 0 2 2 0 004 0zM3 21h18" })),
+                       React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "currentColor", viewBox: "0 0 24 24", 'data-name': "Layer 1" }, React.createElement('path', { d: "M14.022,7h1a1.0013,1.0013,0,0,1,1,1V9a1,1,0,0,0,2,0V8a3.00328,3.00328,0,0,0-3-3h-1a1,1,0,0,0,0,2Zm-4,9h-1a1.0013,1.0013,0,0,1-1-1V14a1,1,0,0,0-2,0v1a3.00328,3.00328,0,0,0,3,3h1a1,1,0,0,0,0-2Zm11-1a1,1,0,0,0,0-2h-3v-.5a1,1,0,0,0-2,0V13h-3a1,1,0,0,0,0,2h5.18427a6.72756,6.72756,0,0,1-1.22553,2.52667,6.66828,6.66828,0,0,1-.62915-.98272.99972.99972,0,1,0-1.77929.9121,8.67791,8.67791,0,0,0,.9591,1.468A6.6182,6.6182,0,0,1,13.10645,20.023a1.00008,1.00008,0,0,0,.42675,1.9541,8.63506,8.63506,0,0,0,3.445-1.62164,8.72368,8.72368,0,0,0,3.46857,1.62115,1,1,0,1,0,.43066-1.95312,6.72477,6.72477,0,0,1-2.4461-1.09009A8.73637,8.73637,0,0,0,20.24371,15ZM9.05176,11.24268a1.00011,1.00011,0,0,0,1.94043-.48536L9.23486,3.72754a2.28107,2.28107,0,0,0-4.42578,0L3.05176,10.75732a1.00011,1.00011,0,0,0,1.94043.48536L5.5528,9H8.49115ZM6.0528,7l.69671-2.78711a.2913.2913,0,0,1,.54492,0L7.99115,7Z" })),
                        React.createElement('span', null, "中/En")
                     ),
                     React.createElement('button', { onClick: () => setIsDarkMode(p => !p), className: `flex items-center gap-3 p-2 rounded-md w-full ${textColorClasses} hover:bg-ink/10 dark:hover:bg-dark-text/10` },
@@ -1095,11 +1150,11 @@
                         React.createElement(WalletIcon, { className: "h-6 w-6" })
                     )
                 ),
-                React.createElement('button', { onClick: handleBatClick, className: "p-1 rounded-full", title: "Brave Wallet" },
-                    React.createElement('img', { alt: "Brave Wallet", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg" })
+                React.createElement('button', { onClick: handleBatClick, className: "p-1 rounded-full", title: t.braveDonate },
+                    React.createElement('img', { alt: "Brave Donate", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg" })
                 ),
-                React.createElement('button', { onClick: () => setLang(lang === 'zh-TW' ? 'en' : 'zh-TW'), className: `text-sm font-semibold ${textColorClasses} transition-colors`, 'aria-label': t.toggleLanguage },
-                    "中/En"
+                React.createElement('button', { onClick: () => setLang(lang === 'zh-TW' ? 'en' : 'zh-TW'), className: `text-sm font-semibold ${textColorClasses} transition-colors p-1 rounded-full`, 'aria-label': t.toggleLanguage },
+                    React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "currentColor", viewBox: "0 0 24 24", 'data-name': "Layer 1" }, React.createElement('path', { d: "M14.022,7h1a1.0013,1.0013,0,0,1,1,1V9a1,1,0,0,0,2,0V8a3.00328,3.00328,0,0,0-3-3h-1a1,1,0,0,0,0,2Zm-4,9h-1a1.0013,1.0013,0,0,1-1-1V14a1,1,0,0,0-2,0v1a3.00328,3.00328,0,0,0,3,3h1a1,1,0,0,0,0-2Zm11-1a1,1,0,0,0,0-2h-3v-.5a1,1,0,0,0-2,0V13h-3a1,1,0,0,0,0,2h5.18427a6.72756,6.72756,0,0,1-1.22553,2.52667,6.66828,6.66828,0,0,1-.62915-.98272.99972.99972,0,1,0-1.77929.9121,8.67791,8.67791,0,0,0,.9591,1.468A6.6182,6.6182,0,0,1,13.10645,20.023a1.00008,1.00008,0,0,0,.42675,1.9541,8.63506,8.63506,0,0,0,3.445-1.62164,8.72368,8.72368,0,0,0,3.46857,1.62115,1,1,0,1,0,.43066-1.95312,6.72477,6.72477,0,0,1-2.4461-1.09009A8.73637,8.73637,0,0,0,20.24371,15ZM9.05176,11.24268a1.00011,1.00011,0,0,0,1.94043-.48536L9.23486,3.72754a2.28107,2.28107,0,0,0-4.42578,0L3.05176,10.75732a1.00011,1.00011,0,0,0,1.94043.48536L5.5528,9H8.49115ZM6.0528,7l.69671-2.78711a.2913.2913,0,0,1,.54492,0L7.99115,7Z" }))
                 ),
                 React.createElement('button', { onClick: () => setIsDarkMode(p => !p), className: `${textColorClasses} p-1 rounded-full transition-colors`, 'aria-label': t.toggleTheme },
                     isDarkMode ? 
@@ -1235,10 +1290,15 @@
                       )
                   ),
                   React.createElement('footer', { className: "absolute bottom-4 sm:bottom-8 text-center text-sm text-ink-light dark:text-dark-text/70" },
-                      React.createElement('div', { className: "border border-ink/10 dark:border-dark-text/30 rounded-lg p-3 sm:p-4 bg-paper/50 dark:bg-dark-bg/50 backdrop-blur-sm" },
-                          React.createElement('p', null, t.competitionNotice),
-                          React.createElement('a', { href: "https://get.unstoppabledomains.com/brave-website-competition/", target: "_blank", rel: "noopener noreferrer", className: "text-vermilion hover:underline" },
-                              t.learnMore
+                      React.createElement('a', { href: "https://get.unstoppabledomains.com/brave-website-competition/", target: "_blank", rel: "noopener noreferrer", className: "inline-block border border-ink/10 dark:border-dark-text/30 rounded-lg p-3 sm:p-4 bg-paper/50 dark:bg-dark-bg/50 backdrop-blur-sm hover:border-vermilion/50 transition-colors" },
+                          React.createElement('div', { className: "flex items-center justify-center gap-3" },
+                              React.createElement('img', { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Brave_lion_icon.svg/654px-Brave_lion_icon.svg.png", alt: "Brave Browser Logo", className: "h-8 w-8 object-contain" }),
+                              React.createElement('div', null,
+                                  React.createElement('p', null, t.competitionNotice),
+                                  React.createElement('span', { className: "text-vermilion hover:underline" },
+                                      t.learnMore
+                                  )
+                              )
                           )
                       )
                   ),
@@ -1257,7 +1317,17 @@
               React.createElement('div', { className: "relative flex flex-col items-center min-h-screen bg-paper dark:bg-dark-bg bg-grid-light dark:bg-grid-dark text-ink dark:text-dark-text p-4 transition-colors duration-300" },
                   React.createElement(Header, { setPage: setPage, currentPage: currentPage, t: t, lang: lang, setLang: setLang, isDarkMode: isDarkMode, setIsDarkMode: setIsDarkMode, handleBatClick: handleBatClick, walletAddress: walletAddress, onConnectWallet: onConnectWallet, chainId: chainId, onGalleryClick: onGalleryClick, className: "absolute top-0 left-0 right-0 z-30" }),
                   React.createElement('main', { className: "w-full max-w-5xl mx-auto flex-grow animate-fade-in pt-24 sm:pt-32 pb-24 px-4" },
-                      React.createElement('h1', { className: "text-4xl sm:text-5xl font-serif-sc font-bold tracking-wider mb-8 text-shadow text-center" }, t.braveScoringTitle),
+                      React.createElement('h1', { className: "text-4xl sm:text-5xl font-serif-sc font-bold tracking-wider mb-8 text-shadow text-center" },
+                          React.createElement('a', {
+                              href: "https://get.unstoppabledomains.com/brave-website-competition/#lp-pom-block-1120-color-overlay",
+                              target: "_blank",
+                              rel: "noopener noreferrer",
+                              className: "inline-flex items-center justify-center gap-4 hover:text-vermilion dark:hover:text-vermilion transition-colors"
+                          },
+                              React.createElement('img', { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Brave_lion_icon.svg/654px-Brave_lion_icon.svg.png", alt: "Brave Browser Logo", className: "h-10 w-10 sm:h-12 sm:h-12 object-contain" }),
+                              React.createElement('span', null, t.braveScoringTitle)
+                          )
+                      ),
                       React.createElement('div', { className: "text-center" }, React.createElement(VoteButton, { t: t, className: "mb-8" })),
                       React.createElement('div', { className: "bg-paper/60 dark:bg-dark-bg/60 backdrop-blur-sm border border-ink/10 dark:border-dark-text/20 rounded-lg p-6 sm:p-8 text-left text-ink dark:text-dark-text/90" },
                           React.createElement('p', { className: "text-lg mb-6 text-ink-light dark:text-dark-text/90" }, t.braveScoringIntro),
@@ -1316,10 +1386,15 @@
                       )
                   ),
                   React.createElement('footer', { className: "absolute bottom-4 sm:bottom-8 text-center text-sm text-ink-light dark:text-dark-text/70" },
-                      React.createElement('div', { className: "border border-ink/10 dark:border-dark-text/30 rounded-lg p-3 sm:p-4 bg-paper/50 dark:bg-dark-bg/50 backdrop-blur-sm" },
-                          React.createElement('p', null, t.competitionNotice),
-                          React.createElement('a', { href: "https://get.unstoppabledomains.com/brave-website-competition/", target: "_blank", rel: "noopener noreferrer", className: "text-vermilion hover:underline" },
-                              t.learnMore
+                      React.createElement('a', { href: "https://get.unstoppabledomains.com/brave-website-competition/", target: "_blank", rel: "noopener noreferrer", className: "inline-block border border-ink/10 dark:border-dark-text/30 rounded-lg p-3 sm:p-4 bg-paper/50 dark:bg-dark-bg/50 backdrop-blur-sm hover:border-vermilion/50 transition-colors" },
+                          React.createElement('div', { className: "flex items-center justify-center gap-3" },
+                              React.createElement('img', { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Brave_lion_icon.svg/654px-Brave_lion_icon.svg.png", alt: "Brave Browser Logo", className: "h-8 w-8 object-contain" }),
+                              React.createElement('div', null,
+                                  React.createElement('p', null, t.competitionNotice),
+                                  React.createElement('span', { className: "text-vermilion hover:underline" },
+                                      t.learnMore
+                                  )
+                              )
                           )
                       )
                   )
@@ -1382,6 +1457,33 @@
                                   )
                               )
                           ),
+                           
+                          React.createElement('hr', { className: "my-8 border-ink/10 dark:border-dark-text/20" }),
+
+                          React.createElement('h2', { className: "text-2xl sm:text-3xl font-serif-sc font-bold tracking-wider mb-6 text-shadow text-vermilion text-center" }, t.thanksToBrave),
+                          React.createElement('p', { className: "text-center max-w-2xl mx-auto mb-8" }, t.thanksToBraveDesc),
+                          React.createElement('div', { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center" },
+                              React.createElement('a', { href: "https://brave.com/", target: "_blank", rel: "noopener noreferrer", className: "block p-4 bg-paper/50 dark:bg-dark-bg/50 rounded-lg border border-transparent hover:border-ink/20 dark:hover:border-dark-text/20 hover:shadow-lg transition-all" },
+                                  React.createElement('img', { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Brave_lion_icon.svg/654px-Brave_lion_icon.svg.png", alt: "Brave Browser Logo", className: "h-12 w-12 mx-auto mb-3 object-contain" }),
+                                  React.createElement('h4', { className: "font-semibold text-ink dark:text-dark-text" }, t.braveBrowser),
+                                  React.createElement('p', { className: "text-sm mt-1" }, t.braveBrowserDesc)
+                              ),
+                              React.createElement('a', { href: "https://search.brave.com/", target: "_blank", rel: "noopener noreferrer", className: "block p-4 bg-paper/50 dark:bg-dark-bg/50 rounded-lg border border-transparent hover:border-ink/20 dark:hover:border-dark-text/20 hover:shadow-lg transition-all" },
+                                  React.createElement('img', { src: "https://upload.wikimedia.org/wikipedia/commons/d/da/Brave_search_logo.png", alt: "Brave Search Logo", className: "h-12 w-12 mx-auto mb-3" }),
+                                  React.createElement('h4', { className: "font-semibold text-ink dark:text-dark-text" }, t.braveSearch),
+                                  React.createElement('p', { className: "text-sm mt-1" }, t.braveSearchDesc)
+                              ),
+                              React.createElement('a', { href: "https://brave.com/wallet/", target: "_blank", rel: "noopener noreferrer", className: "block p-4 bg-paper/50 dark:bg-dark-bg/50 rounded-lg border border-transparent hover:border-ink/20 dark:hover:border-dark-text/20 hover:shadow-lg transition-all" },
+                                  React.createElement('img', { src: "https://brave.com/static-assets/images/optimized/wallet/images/wallet-page-illustration.webp", alt: "Brave Wallet Logo", className: "h-12 w-18 mx-auto mb-3" }),
+                                  React.createElement('h4', { className: "font-semibold text-ink dark:text-dark-text" }, t.braveWallet),
+                                  React.createElement('p', { className: "text-sm mt-1" }, t.braveWalletDesc)
+                              ),
+                              React.createElement('a', { href: "https://brave.com/brave-rewards/", target: "_blank", rel: "noopener noreferrer", className: "block p-4 bg-paper/50 dark:bg-dark-bg/50 rounded-lg border border-transparent hover:border-ink/20 dark:hover:border-dark-text/20 hover:shadow-lg transition-all" },
+                                  React.createElement('img', { src: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg", alt: "Brave Rewards Logo", className: "h-12 w-12 mx-auto mb-3" }),
+                                  React.createElement('h4', { className: "font-semibold text-ink dark:text-dark-text" }, t.braveRewards),
+                                  React.createElement('p', { className: "text-sm mt-1" }, t.braveRewardsDesc)
+                              )
+                          ),
 
                           React.createElement('hr', { className: "my-8 border-ink/10 dark:border-dark-text/20" }),
 
@@ -1412,6 +1514,10 @@
           useEffect(() => {
             setBrushColor(isDarkMode ? '#e0d9cf' : '#3f312b');
           }, [isDarkMode]);
+
+          useEffect(() => {
+              setIsHowToUseModalOpen(true);
+          }, []);
 
           const handleHistoryChange = useCallback((newCanUndo, newCanRedo) => {
               setCanUndo(newCanUndo); setCanRedo(newCanRedo);
@@ -1553,17 +1659,17 @@
                                       React.createElement(React.Fragment, null,
                                       React.createElement('ul', { className: "space-y-6" },
                                           ...searchResults.map((result, index) => (
-                                              React.createElement('li', { key: index, className: "p-4 bg-paper/40 dark:bg-dark-bg/40 border border-ink/10 dark:border-dark-text/10 rounded-lg transition-shadow hover:shadow-md" },
-                                                  React.createElement('a', { href: result.url, target: "_blank", rel: "noopener noreferrer", className: "block" },
-                                                      React.createElement('h3', { className: "text-lg font-semibold text-vermilion hover:underline" }, result.title)
+                                              React.createElement('li', { key: index, className: "bg-paper/50 dark:bg-dark-bg/50 p-4 rounded-lg border border-ink/10 dark:border-dark-text/20 transition-shadow hover:shadow-md" },
+                                                  React.createElement('a', { href: result.url, target: "_blank", rel: "noopener noreferrer" },
+                                                      React.createElement('h4', { className: "text-lg font-semibold text-vermilion hover:underline" }, result.title),
+                                                      React.createElement('p', { className: "text-sm text-green-700 dark:text-green-500 truncate" }, result.url)
                                                   ),
-                                                  React.createElement('a', { href: result.url, target: "_blank", rel: "noopener noreferrer", className: "text-sm text-green-700 dark:text-green-500 truncate block hover:underline", style: {direction: 'ltr'} }, result.url),
-                                                  React.createElement('p', { className: "mt-1 text-sm text-ink-light dark:text-dark-text/80" }, result.description)
+                                                  React.createElement('p', { className: "mt-2 text-ink-light dark:text-dark-text/80" }, result.description)
                                               )
                                           ))
                                       ),
-                                      React.createElement('p', { className: "text-center text-xs mt-4 text-ink-light/70 dark:text-dark-text/70" }, t.braveSearchCredit)
-                                      )
+                                      React.createElement('p', { className: "text-center text-sm text-ink-light/80 dark:text-dark-text/70 mt-8" }, t.braveSearchCredit)
+                                    )
                                   ) : (
                                       React.createElement('p', { className: "text-center text-ink-light dark:text-dark-text/80" }, t.noResults)
                                   )
@@ -1571,56 +1677,45 @@
                           )
                       ),
 
-                      React.createElement('div', { className: "grid grid-cols-1 md:grid-cols-2 gap-8" },
-                          ...calligraphers.map((c, calligrapherIndex) => (
-                              React.createElement('div', { key: c.id, className: "bg-paper/60 dark:bg-dark-bg/60 backdrop-blur-sm border border-ink/10 dark:border-dark-text/20 rounded-lg p-6 flex flex-col sm:flex-row gap-6 transition-shadow hover:shadow-xl" },
-                                  React.createElement('div', { className: "flex-shrink-0" },
-                                      React.createElement('img', { src: c.portrait, alt: c.name, className: "w-32 h-32 object-cover rounded-full mx-auto sm:mx-0 border-2 border-ink/10 dark:border-dark-text/20 shadow-lg" })
-                                  ),
-                                  React.createElement('div', { className: "text-center sm:text-left" },
-                                      React.createElement('h2', { className: "text-2xl font-serif-sc font-bold text-vermilion" }, c.name),
-                                      React.createElement('p', { className: "text-sm text-ink-light dark:text-dark-text/80 mb-3" }, c.era),
-                                      React.createElement('p', { className: "text-sm mb-1" }, React.createElement('strong', { className: "text-ink dark:text-dark-text" }, c.style.split('：')[0]), ": ", c.style.split('：')[1]),
-                                      React.createElement('p', { className: "text-sm mb-4" }, React.createElement('strong', { className: "text-ink dark:text-dark-text" }, c.features.split('：')[0]), ": ", c.features.split('：')[1]),
-                                      React.createElement('div', { className: "text-sm" },
-                                          React.createElement('p', { className: "font-semibold mb-1 text-ink dark:text-dark-text" }, "代表作品:"),
-                                          React.createElement('ul', { className: "flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-x-4 gap-y-1" },
-                                              ...c.works.map((work, workIndex) => (
-                                                  React.createElement('li', { key: work.name },
-                                                      React.createElement('button', {
-                                                          onClick: () => openLightbox(calligrapherIndex, workIndex),
-                                                          onMouseEnter: (e) => handleMouseEnter(e, work.url),
-                                                          onMouseMove: handleMouseMove,
-                                                          onMouseLeave: handleMouseLeave,
-                                                          className: "text-vermilion/80 hover:text-vermilion hover:underline"
-                                                      },
-                                                          work.name
-                                                      )
-                                                  )
-                                              ))
-                                          )
-                                      )
+                      React.createElement('div', { className: "grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-6 gap-y-10" },
+                        ...calligraphers.map((c, calligrapherIndex) => (
+                          React.createElement('div', { key: c.id, className: "bg-paper/50 dark:bg-dark-bg/50 backdrop-blur-sm border border-ink/10 dark:border-dark-text/20 rounded-lg p-4 text-center text-ink dark:text-dark-text/90 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2" },
+                            React.createElement('img', { src: c.portrait, alt: c.name, className: "w-24 h-24 rounded-full mx-auto mb-4 object-cover border-2 border-ink/10 dark:border-dark-text/20" }),
+                            React.createElement('h3', { className: "text-lg font-bold font-serif-sc" }, c.name),
+                            React.createElement('p', { className: "text-xs text-ink-light dark:text-dark-text/70 mb-2" }, c.era),
+                            React.createElement('p', { className: "text-sm mb-1" }, c.style),
+                            React.createElement('p', { className: "text-sm text-ink-light dark:text-dark-text/80 mb-4" }, c.features),
+                            React.createElement('div', { className: "border-t border-ink/10 dark:border-dark-text/20 pt-3" },
+                              React.createElement('h4', { className: "font-semibold text-sm mb-2" }, lang === 'zh-TW' ? '代表作' : 'Notable Works'),
+                              React.createElement('ul', { className: "space-y-1" },
+                                ...c.works.map((work, workIndex) => (
+                                  React.createElement('li', { key: work.name },
+                                    React.createElement('button', {
+                                      onClick: () => openLightbox(calligrapherIndex, workIndex),
+                                      onMouseEnter: (e) => handleMouseEnter(e, work.url),
+                                      onMouseMove: handleMouseMove,
+                                      onMouseLeave: handleMouseLeave,
+                                      className: "text-vermilion hover:underline text-sm"
+                                    }, work.name)
                                   )
+                                ))
                               )
-                          ))
-                      )
+                            )
+                          )
+                        ))
+                      ),
                   ),
-                  preview.visible && (
-                    React.createElement('div', {
-                        className: "pointer-events-none fixed z-50 transition-opacity duration-200 ease-out",
-                        style: { ...preview.style, opacity: 0 }
-                    },
-                        React.createElement('img', { src: preview.url, alt: "preview", className: "w-auto h-auto max-w-[200px] max-h-[200px] rounded-md shadow-2xl border-2 border-white bg-paper" })
-                    )
+
+                  preview.visible && React.createElement('div', { className: "fixed pointer-events-none z-50 w-52 h-52 rounded-md shadow-2xl border-2 border-paper dark:border-dark-bg overflow-hidden transition-opacity duration-200", style: { ...preview.style, opacity: preview.visible ? 1 : 0 } },
+                      React.createElement('img', { src: preview.url, alt: "preview", className: "w-full h-full object-cover" })
                   ),
-                  lightbox.isOpen && (
-                    React.createElement(LightboxModal, {
-                        images: lightbox.images,
-                        currentIndex: lightbox.currentIndex,
-                        setCurrentIndex: (updater) => setLightbox(prev => ({...prev, currentIndex: typeof updater === 'function' ? updater(prev.currentIndex) : updater})),
-                        onClose: () => setLightbox(prev => ({ ...prev, isOpen: false }))
-                    })
-                  )
+
+                  lightbox.isOpen && React.createElement(LightboxModal, { 
+                      images: lightbox.images, 
+                      currentIndex: lightbox.currentIndex,
+                      onClose: () => setLightbox({ ...lightbox, isOpen: false }),
+                      setCurrentIndex: (index) => setLightbox({ ...lightbox, currentIndex: index })
+                  })
               )
           );
       };
@@ -1629,113 +1724,92 @@
       // 7. MAIN APP COMPONENT
       // =================================================================================
       const App = () => {
-          const [page, setPage] = useState('welcome');
-          const [isDarkMode, setIsDarkMode] = useState(() => typeof window !== 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches);
-          const [lang, setLang] = useState('zh-TW');
-          const [walletAddress, setWalletAddress] = useState(null);
-          const [chainId, setChainId] = useState(null);
-          const [isWalletInfoModalOpen, setIsWalletInfoModalOpen] = useState(false);
-          const [isBatModalOpen, setIsBatModalOpen] = useState(false);
-          const [isGalleryModalOpen, setIsGalleryModalOpen] = useState(false);
-          const t = translations[lang];
+        const [page, setPage] = useState('welcome');
+        const [lang, setLang] = useState('zh-TW');
+        const [isDarkMode, setIsDarkMode] = useState(() => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        const [walletAddress, setWalletAddress] = useState(null);
+        const [chainId, setChainId] = useState(null);
+        const [isWalletInfoModalOpen, setIsWalletInfoModalOpen] = useState(false);
+        const [isBatModalOpen, setIsBatModalOpen] = useState(false);
+        const [isFeatureUnavailableModalOpen, setIsFeatureUnavailableModalOpen] = useState(false);
+        
+        const t = translations[lang];
 
-          const handleBatClick = () => {
-              setIsBatModalOpen(true);
-          };
+        useEffect(() => {
+            document.documentElement.lang = lang;
+        }, [lang]);
 
-          const getWalletProvider = () => {
+        useEffect(() => {
+            document.documentElement.classList.toggle('dark', isDarkMode);
+        }, [isDarkMode]);
+
+        const handleConnectWallet = async () => {
             if (typeof window.ethereum !== 'undefined') {
-                return window.ethereum;
-            }
-            if (window.BinanceChain) {
-                return window.BinanceChain;
-            }
-            if (window.okxwallet) {
-                return window.okxwallet;
-            }
-            if (window.phantom?.ethereum) {
-                return window.phantom.ethereum;
-            }
-            return null;
-          };
-
-          const handleConnectWallet = async () => {
-            const provider = getWalletProvider();
-            if (provider) {
-              try {
-                const accounts = await provider.request({ method: 'eth_requestAccounts' });
-                setWalletAddress(accounts[0]);
-                const currentChainId = await provider.request({ method: 'eth_chainId' });
-                setChainId(currentChainId);
-              } catch (err) {
-                console.error('User rejected connection request.', err);
-              }
-            } else {
-              setIsWalletInfoModalOpen(true);
-            }
-          };
-
-          useEffect(() => { 
-            const provider = getWalletProvider();
-            if (provider) {
-                const handleAccountsChanged = (accounts) => {
+                try {
+                    const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
                     if (accounts.length > 0) {
                         setWalletAddress(accounts[0]);
-                    } else {
-                        setWalletAddress(null);
-                        setChainId(null);
+                        const chainId = await window.ethereum.request({ method: 'eth_chainId' });
+                        setChainId(chainId);
                     }
-                };
-                const handleChainChanged = (newChainId) => {
-                    setChainId(newChainId);
-                    window.location.reload();
-                };
-                
-                provider.on('accountsChanged', handleAccountsChanged);
-                provider.on('chainChanged', handleChainChanged);
+                } catch (error) {
+                    console.error("Wallet connection failed:", error);
+                }
+            } else {
+                setIsWalletInfoModalOpen(true);
+            }
+        };
 
+        useEffect(() => {
+            if (window.ethereum) {
+                const handleAccountsChanged = (accounts) => {
+                    setWalletAddress(accounts.length > 0 ? accounts[0] : null);
+                };
+                const handleChainChanged = (chainId) => {
+                    setChainId(chainId);
+                };
+                window.ethereum.on('accountsChanged', handleAccountsChanged);
+                window.ethereum.on('chainChanged', handleChainChanged);
                 return () => {
-                    provider.removeListener('accountsChanged', handleAccountsChanged);
-                    provider.removeListener('chainChanged', handleChainChanged);
+                    window.ethereum.removeListener('accountsChanged', handleAccountsChanged);
+                    window.ethereum.removeListener('chainChanged', handleChainChanged);
                 };
             }
-          }, []);
+        }, []);
 
-          useEffect(() => { 
-            document.documentElement.lang = lang; 
-          }, [lang]);
-          
-          useEffect(() => {
-            document.documentElement.classList.toggle('dark', isDarkMode);
-          }, [isDarkMode]);
-          
-          const renderPage = () => {
-              const props = { setPage, currentPage: page, t, lang, setLang, isDarkMode, setIsDarkMode, handleBatClick, walletAddress, chainId, onConnectWallet: handleConnectWallet, onGalleryClick: () => setIsGalleryModalOpen(true) };
-              switch(page) {
-                  case 'canvas': return React.createElement(CanvasPage, props);
-                  case 'brave-scoring': return React.createElement(BraveScoringPage, props);
-                  case 'about': return React.createElement(AboutPage, props);
-                  case 'fonts': return React.createElement(FontsPage, props);
-                  case 'welcome': default: return React.createElement(WelcomePage, props);
-              }
-          };
+        const pageProps = {
+            setPage, currentPage: page, t, lang, setLang, isDarkMode, setIsDarkMode,
+            handleBatClick: () => setIsBatModalOpen(true),
+            walletAddress, onConnectWallet: handleConnectWallet, chainId,
+            onGalleryClick: () => setIsFeatureUnavailableModalOpen(true)
+        };
 
-          return (
-            React.createElement('div', { className: "font-serif-sc text-ink dark:text-dark-text bg-paper dark:bg-dark-bg transition-colors duration-300" },
-              renderPage(),
-              isWalletInfoModalOpen && React.createElement(WalletInfoModal, { onClose: () => setIsWalletInfoModalOpen(false), t: t }),
-              isBatModalOpen && React.createElement(BatModal, { onClose: () => setIsBatModalOpen(false), t: t }),
-              isGalleryModalOpen && React.createElement(FeatureUnavailableModal, { onClose: () => setIsGalleryModalOpen(false), t: t })
+        const renderPage = () => {
+            switch (page) {
+                case 'canvas': return React.createElement(CanvasPage, pageProps);
+                case 'brave-scoring': return React.createElement(BraveScoringPage, pageProps);
+                case 'about': return React.createElement(AboutPage, pageProps);
+                case 'fonts': return React.createElement(FontsPage, pageProps);
+                case 'welcome':
+                default:
+                    return React.createElement(WelcomePage, pageProps);
+            }
+        };
+        
+        return (
+            React.createElement(React.Fragment, null,
+                renderPage(),
+                isWalletInfoModalOpen && React.createElement(WalletInfoModal, { onClose: () => setIsWalletInfoModalOpen(false), t: t }),
+                isBatModalOpen && React.createElement(BatModal, { onClose: () => setIsBatModalOpen(false), t: t }),
+                isFeatureUnavailableModalOpen && React.createElement(FeatureUnavailableModal, { onClose: () => setIsFeatureUnavailableModalOpen(false), t: t })
             )
-          );
+        );
       };
 
-      // =================================================================================
-      // 8. RENDER APPLICATION
-      // =================================================================================
       const container = document.getElementById('root');
       const root = ReactDOM.createRoot(container);
-      root.render(React.createElement(App, null));
+      root.render(React.createElement(App));
+
     </script>
 </body>
 </html>
