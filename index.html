@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Singknature 神韻 · 墨跡 - Calligraphy Canvas</title>
     <!-- Favicon -->
-    <link rel="icon" href="soft-pen-icon.png">
+    <link rel="icon" href="soft-pen-icon.svg" type="image/svg+xml">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -173,7 +173,6 @@
           authorAvatarCredit: '作者頭像由 Unstoppable Domains 提供',
           walletIconsCredit: '錢包圖示來源於 Wikimedia Commons 等平台',
           inspirationCredit: '筆觸渲染靈感來自 Atrament.js, Paper.js, three.js 與社群分享',
-          viewOnGithub: '在 GitHub 上查看原始碼',
           featureUnavailable: '功能尚未開放',
           featureUnavailableDesc: '相關的智能合約尚未部署。此功能即將推出，敬請期待！',
           fontsIntro: '收錄自古至今具代表性的十位書法名家，涵蓋楷、行、草、隸、篆五體。',
@@ -277,7 +276,6 @@
           authorAvatarCredit: 'Author avatar provided by Unstoppable Domains',
           walletIconsCredit: 'Wallet icons sourced from platforms like Wikimedia Commons',
           inspirationCredit: 'Stroke rendering inspired by Atrament.js, Paper.js, three.js and community shares',
-          viewOnGithub: 'View Source on GitHub',
           featureUnavailable: 'Feature Not Available',
           featureUnavailableDesc: 'The related smart contract has not been deployed yet. This feature is coming soon, please stay tuned!',
           fontsIntro: 'Featuring ten representative calligraphers from ancient to modern times, covering five major scripts: Regular, Cursive, Semi-cursive, Clerical, and Seal.',
@@ -381,168 +379,168 @@
       // 3. ICON & SMALL UI COMPONENTS
       // =================================================================================
       const BrandIcon = ({ className }) => (
-        <svg xmlns="http://www.w3.org/2000/svg" className={className} viewBox="0 0 992 992" fill="currentColor">
-          <path d="M538.677063,454.678040 C567.945679,423.391663 597.472961,392.839752 627.279175,362.565704 C684.096802,304.856140 741.196228,247.420334 802.218811,194.078995 C820.279419,178.291809 838.578003,162.749756 859.242615,150.323639 C863.689392,147.649719 868.250244,145.220688 873.382935,144.177368 C878.881042,143.059753 882.202271,145.630219 882.239319,151.279694 C882.304871,161.269363 877.943420,170.072540 873.903687,178.781570 C856.096924,217.170197 833.382629,252.636536 808.700623,286.895721 C775.646423,332.775940 739.491821,376.122131 701.755310,418.200684 C659.575989,465.233154 615.597107,510.511688 570.189697,554.417480 C563.242310,561.135010 556.237244,567.793640 549.198669,574.415527 C547.935852,575.603516 546.968201,577.416748 544.010132,577.240784 C546.724976,559.556885 540.441528,544.677612 528.841553,531.861511 C517.169678,518.965942 502.506714,512.580261 484.583710,514.087280 C484.456635,513.533386 484.329559,512.979431 484.202484,512.425537 C502.280670,493.262848 520.358826,474.100189 538.677063,454.678040 z"></path>
-          <path d="M412.601379,733.497559 C399.969421,755.813904 380.384369,768.574158 357.005249,776.163818 C313.032654,790.438965 271.580017,783.342407 232.036346,760.920410 C222.594864,755.566895 213.561829,749.624634 205.402405,742.434021 C203.580414,740.828369 201.472580,739.372742 200.835266,736.353088 C203.335983,735.319397 205.740845,736.153137 208.125687,736.282593 C230.089935,737.474670 251.006241,734.121155 269.538513,721.372864 C282.502930,712.454712 290.823608,699.996887 295.719147,685.185852 C298.380737,677.133545 300.242065,668.783569 304.840607,661.483459 C314.383606,646.334106 328.341309,638.080078 345.906708,636.302368 C371.922943,633.669373 394.435181,641.564453 411.759247,661.364685 C424.286438,675.682373 423.772491,693.244751 420.898315,710.728882 C419.599915,718.627380 416.791321,726.164490 412.601379,733.497559 z"></path>
-          <path d="M525.123901,622.980469 C516.751404,641.301331 506.510071,657.995178 493.451935,672.889160 C486.592743,680.712708 479.030334,687.681274 469.347626,691.930054 C457.711304,697.036133 447.463715,694.349609 439.690277,684.221436 C436.423096,679.964539 434.244537,675.076111 431.652283,670.427124 C419.267792,648.216797 402.269897,631.429382 377.176605,624.211487 C371.405090,622.551392 365.494690,621.312927 359.492523,621.469360 C354.815887,621.591370 354.071747,619.321655 354.872833,615.603821 C356.553192,607.805054 360.369873,600.983887 364.946747,594.587280 C375.956757,579.199890 390.227772,567.248413 405.679321,556.638733 C421.352722,545.876831 437.457184,535.806519 455.459473,529.302063 C467.699982,524.879395 480.265228,522.573303 493.132935,526.331177 C510.127136,531.294128 518.925110,544.299622 524.920410,559.763977 C529.160034,570.699768 531.057434,582.196167 532.185730,593.808838 C533.192627,604.171875 529.002258,613.364502 525.123901,622.980469 z"></path>
-          <path d="M223.716064,722.279541 C221.529663,724.138367 220.328339,721.980774 218.950317,721.193481 C207.996887,714.936218 200.295578,715.402405 190.424515,723.125305 C181.679794,729.966919 172.450897,729.046753 164.748367,720.565369 C157.100586,712.144287 157.194656,702.849609 165.233856,694.869019 C171.666061,688.483704 179.664246,686.614929 188.301346,688.393738 C206.955547,692.235596 218.020157,704.342712 223.716064,722.279541 z"></path>
-        </svg>
+        React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: className, viewBox: "0 0 992 992", fill: "currentColor" },
+          React.createElement('path', { d: "M538.677063,454.678040 C567.945679,423.391663 597.472961,392.839752 627.279175,362.565704 C684.096802,304.856140 741.196228,247.420334 802.218811,194.078995 C820.279419,178.291809 838.578003,162.749756 859.242615,150.323639 C863.689392,147.649719 868.250244,145.220688 873.382935,144.177368 C878.881042,143.059753 882.202271,145.630219 882.239319,151.279694 C882.304871,161.269363 877.943420,170.072540 873.903687,178.781570 C856.096924,217.170197 833.382629,252.636536 808.700623,286.895721 C775.646423,332.775940 739.491821,376.122131 701.755310,418.200684 C659.575989,465.233154 615.597107,510.511688 570.189697,554.417480 C563.242310,561.135010 556.237244,567.793640 549.198669,574.415527 C547.935852,575.603516 546.968201,577.416748 544.010132,577.240784 C546.724976,559.556885 540.441528,544.677612 528.841553,531.861511 C517.169678,518.965942 502.506714,512.580261 484.583710,514.087280 C484.456635,513.533386 484.329559,512.979431 484.202484,512.425537 C502.280670,493.262848 520.358826,474.100189 538.677063,454.678040 z" }),
+          React.createElement('path', { d: "M412.601379,733.497559 C399.969421,755.813904 380.384369,768.574158 357.005249,776.163818 C313.032654,790.438965 271.580017,783.342407 232.036346,760.920410 C222.594864,755.566895 213.561829,749.624634 205.402405,742.434021 C203.580414,740.828369 201.472580,739.372742 200.835266,736.353088 C203.335983,735.319397 205.740845,736.153137 208.125687,736.282593 C230.089935,737.474670 251.006241,734.121155 269.538513,721.372864 C282.502930,712.454712 290.823608,699.996887 295.719147,685.185852 C298.380737,677.133545 300.242065,668.783569 304.840607,661.483459 C314.383606,646.334106 328.341309,638.080078 345.906708,636.302368 C371.922943,633.669373 394.435181,641.564453 411.759247,661.364685 C424.286438,675.682373 423.772491,693.244751 420.898315,710.728882 C419.599915,718.627380 416.791321,726.164490 412.601379,733.497559 z" }),
+          React.createElement('path', { d: "M525.123901,622.980469 C516.751404,641.301331 506.510071,657.995178 493.451935,672.889160 C486.592743,680.712708 479.030334,687.681274 469.347626,691.930054 C457.711304,697.036133 447.463715,694.349609 439.690277,684.221436 C436.423096,679.964539 434.244537,675.076111 431.652283,670.427124 C419.267792,648.216797 402.269897,631.429382 377.176605,624.211487 C371.405090,622.551392 365.494690,621.312927 359.492523,621.469360 C354.815887,621.591370 354.071747,619.321655 354.872833,615.603821 C356.553192,607.805054 360.369873,600.983887 364.946747,594.587280 C375.956757,579.199890 390.227722,567.248413 405.679321,556.638733 C421.352722,545.876831 437.457184,535.806519 455.459473,529.302063 C467.699982,524.879395 480.265228,522.573303 493.132935,526.331177 C510.127136,531.294128 518.925110,544.299622 524.920410,559.763977 C529.160034,570.699768 531.057434,582.196167 532.185730,593.808838 C533.192627,604.171875 529.002258,613.364502 525.123901,622.980469 z" }),
+          React.createElement('path', { d: "M223.716064,722.279541 C221.529663,724.138367 220.328339,721.980774 218.950317,721.193481 C207.996887,714.936218 200.295578,715.402405 190.424515,723.125305 C181.679794,729.966919 172.450897,729.046753 164.748367,720.565369 C157.100586,712.144287 157.194656,702.849609 165.233856,694.869019 C171.666061,688.483704 179.664246,686.614929 188.301346,688.393738 C206.955547,692.235596 218.020157,704.342712 223.716064,722.279541 z" })
+        )
       );
       const WalletIcon = ({ className }) => (
-        <svg
-            className={className}
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-        >
-            <path d="M20 7H6C4.89543 7 4 7.89543 4 9V18C4 19.1046 4.89543 20 6 20H20C21.1046 20 22 19.1046 22 18V9C22 7.89543 21.1046 7 20 7Z" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M4 11H22" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-            <path d="M20 7H6C4.89543 7 4 7.89543 4 9V6C4 4.89543 4.89543 4 6 4H18C19.1046 4 20 4.89543 20 6V7Z" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
-        </svg>
+        React.createElement('svg', {
+            className: className,
+            viewBox: "0 0 24 24",
+            fill: "none",
+            xmlns: "http://www.w3.org/2000/svg"
+        },
+            React.createElement('path', { d: "M20 7H6C4.89543 7 4 7.89543 4 9V18C4 19.1046 4.89543 20 6 20H20C21.1046 20 22 19.1046 22 18V9C22 7.89543 21.1046 7 20 7Z", stroke: "currentColor", strokeWidth: "2.5", strokeLinecap: "round", strokeLinejoin: "round" }),
+            React.createElement('path', { d: "M4 11H22", stroke: "currentColor", strokeWidth: "2.5", strokeLinecap: "round", strokeLinejoin: "round" }),
+            React.createElement('path', { d: "M20 7H6C4.89543 7 4 7.89543 4 9V6C4 4.89543 4.89543 4 6 4H18C19.1046 4 20 4.89543 20 6V7Z", stroke: "currentColor", strokeWidth: "2.5", strokeLinecap: "round", strokeLinejoin: "round" })
+        )
       );
       const ChainIcon = ({ chainId, className }) => {
           const icons = {
               '0x1': ( // Ethereum
-                  <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M12 2.25 11.53 8.95 12 9.25 12.47 8.95 12 2.25zM12.47 9.95 12 10.25 11.53 9.95 6 12.42l5.53 3.63L12 15.75l.47.3 5.53-3.63L12.47 9.95zM12 21.75l5.96-8.72-5.49-3.61L12 9.72l-.47-.3-5.49 3.61L12 21.75z"/>
-                  </svg>
+                  React.createElement('svg', { className: className, viewBox: "0 0 24 24", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg" },
+                      React.createElement('path', { d: "M12 2.25 11.53 8.95 12 9.25 12.47 8.95 12 2.25zM12.47 9.95 12 10.25 11.53 9.95 6 12.42l5.53 3.63L12 15.75l.47.3 5.53-3.63L12.47 9.95zM12 21.75l5.96-8.72-5.49-3.61L12 9.72l-.47-.3-5.49 3.61L12 21.75z" })
+                  )
               ),
               '0x89': ( // Polygon
-                  <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16.69 6.45a.75.75 0 0 0-1.12-.32l-5.4 3.93-3-2.18a.75.75 0 0 0-1.04.2l-2.25 3.1a.75.75 0 0 0 .2 1.04l5.4 3.93-2.45 1.78a.75.75 0 0 0 .84 1.25l7.65-5.55a.75.75 0 0 0 .32-1.12l-2.25-3.1a.75.75 0 0 0-.2-.11zm-5.94 4.3L12 10l2.25 3.1-4.5 3.27-2.46-1.78 4.71-3.44z"/>
-                  </svg>
+                  React.createElement('svg', { className: className, viewBox: "0 0 24 24", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg" },
+                      React.createElement('path', { d: "M16.69 6.45a.75.75 0 0 0-1.12-.32l-5.4 3.93-3-2.18a.75.75 0 0 0-1.04.2l-2.25 3.1a.75.75 0 0 0 .2 1.04l5.4 3.93-2.45 1.78a.75.75 0 0 0 .84 1.25l7.65-5.55a.75.75 0 0 0 .32-1.12l-2.25-3.1a.75.75 0 0 0-.2-.11zm-5.94 4.3L12 10l2.25 3.1-4.5 3.27-2.46-1.78 4.71-3.44z" })
+                  )
               ),
               '0x38': ( // BSC
-                  <svg className={className} viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M16.624 13.92l3.75-2.165-3.75-2.165-2.165 1.25 2.165 1.25-2.165 1.25 2.165 1.25zM12 12.04L14.165 13.3 12 14.55 9.835 13.3 12 12.04zM7.376 9.59L11.125 7.425 7.376 5.26 5.21 6.51l2.166 1.25-2.166 1.25L7.376 9.59zM2.03 14.28L5.78 12.115 2.03 9.95 0 11.2l2.03 1.185v3.83L0 17.38l2.03 1.185 2.165-1.25-2.165-1.25v-2.54zM21.97 9.95l-3.75 2.165 3.75 2.165L24 13.085l-2.03-1.185v-3.83l2.03-1.17L21.97 9.95z"/>
-                  </svg>
+                  React.createElement('svg', { className: className, viewBox: "0 0 24 24", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg" },
+                      React.createElement('path', { d: "M16.624 13.92l3.75-2.165-3.75-2.165-2.165 1.25 2.165 1.25-2.165 1.25 2.165 1.25zM12 12.04L14.165 13.3 12 14.55 9.835 13.3 12 12.04zM7.376 9.59L11.125 7.425 7.376 5.26 5.21 6.51l2.166 1.25-2.166 1.25L7.376 9.59zM2.03 14.28L5.78 12.115 2.03 9.95 0 11.2l2.03 1.185v3.83L0 17.38l2.03 1.185 2.165-1.25-2.165-1.25v-2.54zM21.97 9.95l-3.75 2.165 3.75 2.165L24 13.085l-2.03-1.185v-3.83l2.03-1.17L21.97 9.95z" })
+                  )
               )
           };
           const defaultIcon = (
-              <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-              </svg>
+              React.createElement('svg', { className: className, fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" },
+                React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" })
+              )
           );
           return icons[chainId] || defaultIcon;
       };
       const VoteButton = ({ t, className = '' }) => (
-          <a 
-              href="https://get.unstoppabledomains.com/brave-peoples-choice-awards/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className={`inline-block px-8 py-3 bg-transparent border-2 border-vermilion text-vermilion text-lg font-semibold rounded-lg shadow-sm hover:bg-vermilion hover:text-white transition-all duration-300 transform hover:scale-105 ${className}`}
-          >
-              {t.voteForMe}
-          </a>
+          React.createElement('a', {
+              href: "https://get.unstoppabledomains.com/brave-peoples-choice-awards/",
+              target: "_blank",
+              rel: "noopener noreferrer",
+              className: `inline-block px-8 py-3 bg-transparent border-2 border-vermilion text-vermilion text-lg font-semibold rounded-lg shadow-sm hover:bg-vermilion hover:text-white transition-all duration-300 transform hover:scale-105 ${className}`
+          },
+              t.voteForMe
+          )
       );
       
       // =================================================================================
       // 4. MODAL COMPONENTS
       // =================================================================================
       const NFTModal = ({ onClose, t, walletAddress, onConnectWallet }) => (
-          <div className="fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center animate-fade-in" onClick={onClose}>
-              <div className="relative bg-paper/95 dark:bg-dark-bg/95 rounded-xl shadow-2xl border border-ink/10 dark:border-dark-text/10 p-6 w-[calc(100vw-2rem)] max-w-sm text-center" onClick={e => e.stopPropagation()}>
-                  <button onClick={onClose} className="absolute top-2 right-2 p-1 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10" aria-label={t.closeModal}>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-ink dark:text-dark-text" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-                  </button>
-                  <h2 className="text-xl font-bold text-vermilion mb-4">{t.mintAsNFT}</h2>
-                  {walletAddress ? (
-                      <div className="flex flex-col items-center justify-center gap-4 text-ink-light dark:text-dark-text">
-                          <button className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border-2 border-dashed border-ink/20 dark:border-dark-text/20 cursor-not-allowed opacity-60">
-                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" /></svg>
-                             <span>Upload Artwork</span>
-                          </button>
-                          <p className="text-lg font-semibold tracking-widest mt-2">{t.comingSoon}</p>
-                      </div>
+          React.createElement('div', { className: "fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center animate-fade-in", onClick: onClose },
+              React.createElement('div', { className: "relative bg-paper/95 dark:bg-dark-bg/95 rounded-xl shadow-2xl border border-ink/10 dark:border-dark-text/10 p-6 w-[calc(100vw-2rem)] max-w-sm text-center", onClick: e => e.stopPropagation() },
+                  React.createElement('button', { onClick: onClose, className: "absolute top-2 right-2 p-1 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10", 'aria-label': t.closeModal },
+                      React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5 text-ink dark:text-dark-text", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M6 18L18 6M6 6l12 12" }))
+                  ),
+                  React.createElement('h2', { className: "text-xl font-bold text-vermilion mb-4" }, t.mintAsNFT),
+                  walletAddress ? (
+                      React.createElement('div', { className: "flex flex-col items-center justify-center gap-4 text-ink-light dark:text-dark-text" },
+                          React.createElement('button', { className: "w-full flex items-center justify-center gap-2 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border-2 border-dashed border-ink/20 dark:border-dark-text/20 cursor-not-allowed opacity-60" },
+                             React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" })),
+                             React.createElement('span', null, "Upload Artwork")
+                          ),
+                          React.createElement('p', { className: "text-lg font-semibold tracking-widest mt-2" }, t.comingSoon)
+                      )
                   ) : (
-                      <div className="flex flex-col items-center justify-center gap-4 text-ink-light dark:text-dark-text">
-                        <h3 className="text-lg font-semibold text-ink dark:text-dark-text">{t.connectToMint}</h3>
-                        <p className="text-sm">{t.connectToMintDesc}</p>
-                        <button onClick={onConnectWallet} className="w-full flex items-center justify-center gap-3 px-4 py-3 bg-vermilion/80 hover:bg-vermilion rounded-lg transition-colors font-semibold text-white">
-                          <WalletIcon className="h-5 w-5" />
-                          <span>{t.connectWallet}</span>
-                        </button>
-                      </div>
-                  )}
-              </div>
-          </div>
+                      React.createElement('div', { className: "flex flex-col items-center justify-center gap-4 text-ink-light dark:text-dark-text" },
+                        React.createElement('h3', { className: "text-lg font-semibold text-ink dark:text-dark-text" }, t.connectToMint),
+                        React.createElement('p', { className: "text-sm" }, t.connectToMintDesc),
+                        React.createElement('button', { onClick: onConnectWallet, className: "w-full flex items-center justify-center gap-3 px-4 py-3 bg-vermilion/80 hover:bg-vermilion rounded-lg transition-colors font-semibold text-white" },
+                          React.createElement(WalletIcon, { className: "h-5 w-5" }),
+                          React.createElement('span', null, t.connectWallet)
+                        )
+                      )
+                  )
+              )
+          )
       );
       const HowToUseModal = ({ onClose, t }) => {
           const [showVideoPlayer, setShowVideoPlayer] = useState(false);
           return (
-              <div className="fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in" onClick={onClose}>
-                  <div className="relative bg-paper/95 dark:bg-dark-bg/95 rounded-xl shadow-2xl border border-ink/10 dark:border-dark-text/10 p-6 w-full max-w-lg max-h-[90vh] overflow-y-auto" onClick={e => e.stopPropagation()}>
-                      <button onClick={onClose} className="absolute top-2 right-2 p-1 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10 z-10" aria-label={t.closeModal}>
-                          <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-ink dark:text-dark-text" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-                      </button>
-                      <h2 className="text-xl font-bold text-vermilion mb-4">{t.howToUse}</h2>
-                      {showVideoPlayer ? (
-                          <div className="w-full aspect-video mb-4 rounded-lg overflow-hidden shadow-lg border border-ink/10 dark:border-dark-text/10"><iframe className="w-full h-full" src="https://www.youtube.com/embed/INLkBfEIsJM?si=olhVqRW0SmDzRJZs&autoplay=1" title={t.videoTitle} frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe></div>
+              React.createElement('div', { className: "fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in", onClick: onClose },
+                  React.createElement('div', { className: "relative bg-paper/95 dark:bg-dark-bg/95 rounded-xl shadow-2xl border border-ink/10 dark:border-dark-text/10 p-6 w-full max-w-lg max-h-[90vh] overflow-y-auto", onClick: e => e.stopPropagation() },
+                      React.createElement('button', { onClick: onClose, className: "absolute top-2 right-2 p-1 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10 z-10", 'aria-label': t.closeModal },
+                          React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5 text-ink dark:text-dark-text", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M6 18L18 6M6 6l12 12" }))
+                      ),
+                      React.createElement('h2', { className: "text-xl font-bold text-vermilion mb-4" }, t.howToUse),
+                      showVideoPlayer ? (
+                          React.createElement('div', { className: "w-full aspect-video mb-4 rounded-lg overflow-hidden shadow-lg border border-ink/10 dark:border-dark-text/10" }, React.createElement('iframe', { className: "w-full h-full", src: "https://www.youtube.com/embed/INLkBfEIsJM?si=olhVqRW0SmDzRJZs&autoplay=1", title: t.videoTitle, frameBorder: "0", allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share", referrerPolicy: "strict-origin-when-cross-origin", allowFullScreen: true }))
                       ) : (
-                          <div role="button" tabIndex="0" onClick={() => setShowVideoPlayer(true)} onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') setShowVideoPlayer(true); }} className="group block w-full aspect-video mb-4 rounded-lg overflow-hidden shadow-lg border border-ink/10 dark:border-dark-text/10 relative transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-dark-bg focus:ring-vermilion cursor-pointer" aria-label={t.videoTitle}>
-                              <img src="https://i.ytimg.com/vi/INLkBfEIsJM/hqdefault.jpg" alt={t.videoTitle} className="w-full h-full object-cover" />
-                              <div className="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors flex items-center justify-center">
-                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-white/80 group-hover:text-white transition-transform group-hover:scale-110" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" /></svg>
-                              </div>
-                          </div>
-                      )}
-                      <ul className="list-disc list-inside space-y-2 text-sm text-ink-light dark:text-dark-text">
-                        <li><b>{t.draw}</b> {t.drawDesc}</li>
-                        <li><b>{t.pan}</b> {t.panDesc}</li>
-                        <li><b>{t.zoom}</b> {t.zoomDesc}</li>
-                        <li className="pt-1">💡 {t.brushTip}</li>
-                      </ul>
-                  </div>
-              </div>
+                          React.createElement('div', { role: "button", tabIndex: "0", onClick: () => setShowVideoPlayer(true), onKeyDown: (e) => { if (e.key === 'Enter' || e.key === ' ') setShowVideoPlayer(true); }, className: "group block w-full aspect-video mb-4 rounded-lg overflow-hidden shadow-lg border border-ink/10 dark:border-dark-text/10 relative transition-transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-offset-2 dark:focus:ring-offset-dark-bg focus:ring-vermilion cursor-pointer", 'aria-label': t.videoTitle },
+                              React.createElement('img', { src: "https://i.ytimg.com/vi/INLkBfEIsJM/hqdefault.jpg", alt: t.videoTitle, className: "w-full h-full object-cover" }),
+                              React.createElement('div', { className: "absolute inset-0 bg-black/30 group-hover:bg-black/50 transition-colors flex items-center justify-center" },
+                                  React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-16 w-16 text-white/80 group-hover:text-white transition-transform group-hover:scale-110", viewBox: "0 0 20 20", fill: "currentColor" }, React.createElement('path', { fillRule: "evenodd", d: "M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z", clipRule: "evenodd" }))
+                              )
+                          )
+                      ),
+                      React.createElement('ul', { className: "list-disc list-inside space-y-2 text-sm text-ink-light dark:text-dark-text" },
+                        React.createElement('li', null, React.createElement('b', null, t.draw), " ", t.drawDesc),
+                        React.createElement('li', null, React.createElement('b', null, t.pan), " ", t.panDesc),
+                        React.createElement('li', null, React.createElement('b', null, t.zoom), " ", t.zoomDesc),
+                        React.createElement('li', { className: "pt-1" }, "💡 ", t.brushTip)
+                      )
+                  )
+              )
           );
       };
       const WalletInfoModal = ({ onClose, t }) => (
-        <div className="fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center animate-fade-in" onClick={onClose}>
-            <div className="relative bg-paper/95 dark:bg-dark-bg/95 rounded-xl shadow-2xl border border-ink/10 dark:border-dark-text/10 p-6 w-[calc(100vw-2rem)] max-w-sm text-center font-serif-sc" onClick={e => e.stopPropagation()}>
-                <button onClick={onClose} className="absolute top-2 right-2 p-1 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10" aria-label={t.closeModal}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-ink dark:text-dark-text" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-                </button>
-                <h2 className="text-xl font-bold text-vermilion mb-4">{t.walletRequired}</h2>
-                <p className="text-ink-light dark:text-dark-text mb-6">{t.walletRequiredDesc}</p>
-                <div className="flex flex-col gap-3">
-                    <a href="https://brave.com/wallet/" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text">
-                        <img alt="Brave Wallet" className="h-6 w-6" src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg" />
-                        <span>{t.braveWallet}</span>
-                    </a>
-                    <a href="https://metamask.io/download/" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text">
-                        <img alt="MetaMask" className="h-6 w-6" src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg" />
-                        <span>{t.metaMask}</span>
-                    </a>
-                    <a href="https://www.binance.com/en/wallet" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text">
-                        <img alt="Binance Wallet" className="h-6 w-6" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Binance_Logo.svg/480px-Binance_Logo.svg.png" />
-                        <span>{t.binanceWallet}</span>
-                    </a>
-                    <a href="https://www.okx.com/web3" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text">
-                        <img alt="OKX Wallet" className="h-6 w-6" src="https://play-lh.googleusercontent.com/N00SbjLJJrhg4hbdnkk3Llk2oedNNgCU29DvR9cpep7Lr0VkzvBkmLqajWNgFb0d7IOO" />
-                        <span>{t.okxWallet}</span>
-                    </a>
-                    <a href="https://phantom.app/" target="_blank" rel="noopener noreferrer" className="w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text">
-                        <img alt="Phantom Wallet" className="h-6 w-6" src="https://mintcdn.com/phantom-e50e2e68/fkWrmnMWhjoXSGZ9/resources/images/Phantom_SVG_Icon.svg?w=1100&fit=max&auto=format&n=fkWrmnMWhjoXSGZ9&q=85&s=d9602893116f9314145e2a303d675ccc" />
-                        <span>{t.phantomWallet}</span>
-                    </a>
-                </div>
-            </div>
-        </div>
+        React.createElement('div', { className: "fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center animate-fade-in", onClick: onClose },
+            React.createElement('div', { className: "relative bg-paper/95 dark:bg-dark-bg/95 rounded-xl shadow-2xl border border-ink/10 dark:border-dark-text/10 p-6 w-[calc(100vw-2rem)] max-w-sm text-center font-serif-sc", onClick: e => e.stopPropagation() },
+                React.createElement('button', { onClick: onClose, className: "absolute top-2 right-2 p-1 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10", 'aria-label': t.closeModal },
+                    React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5 text-ink dark:text-dark-text", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M6 18L18 6M6 6l12 12" }))
+                ),
+                React.createElement('h2', { className: "text-xl font-bold text-vermilion mb-4" }, t.walletRequired),
+                React.createElement('p', { className: "text-ink-light dark:text-dark-text mb-6" }, t.walletRequiredDesc),
+                React.createElement('div', { className: "flex flex-col gap-3" },
+                    React.createElement('a', { href: "https://brave.com/wallet/", target: "_blank", rel: "noopener noreferrer", className: "w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text" },
+                        React.createElement('img', { alt: "Brave Wallet", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg" }),
+                        React.createElement('span', null, t.braveWallet)
+                    ),
+                    React.createElement('a', { href: "https://metamask.io/download/", target: "_blank", rel: "noopener noreferrer", className: "w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text" },
+                        React.createElement('img', { alt: "MetaMask", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg" }),
+                        React.createElement('span', null, t.metaMask)
+                    ),
+                    React.createElement('a', { href: "https://www.binance.com/en/wallet", target: "_blank", rel: "noopener noreferrer", className: "w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text" },
+                        React.createElement('img', { alt: "Binance Wallet", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Binance_Logo.svg/480px-Binance_Logo.svg.png" }),
+                        React.createElement('span', null, t.binanceWallet)
+                    ),
+                    React.createElement('a', { href: "https://www.okx.com/web3", target: "_blank", rel: "noopener noreferrer", className: "w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text" },
+                        React.createElement('img', { alt: "OKX Wallet", className: "h-6 w-6", src: "https://play-lh.googleusercontent.com/N00SbjLJJrhg4hbdnkk3Llk2oedNNgCU29DvR9cpep7Lr0VkzvBkmLqajWNgFb0d7IOO" }),
+                        React.createElement('span', null, t.okxWallet)
+                    ),
+                    React.createElement('a', { href: "https://phantom.app/", target: "_blank", rel: "noopener noreferrer", className: "w-full flex items-center justify-start gap-3 px-4 py-3 bg-ink/5 dark:bg-dark-text/5 rounded-lg border border-ink/20 dark:border-dark-text/20 hover:bg-ink/10 dark:hover:bg-dark-text/10 transition-colors font-semibold text-ink dark:text-dark-text" },
+                        React.createElement('img', { alt: "Phantom Wallet", className: "h-6 w-6", src: "https://mintcdn.com/phantom-e50e2e68/fkWrmnMWhjoXSGZ9/resources/images/Phantom_SVG_Icon.svg?w=1100&fit=max&auto=format&n=fkWrmnMWhjoXSGZ9&q=85&s=d9602893116f9314145e2a303d675ccc" }),
+                        React.createElement('span', null, t.phantomWallet)
+                    )
+                )
+            )
+        )
       );
       const BatModal = ({ onClose, t }) => (
-          <div className="fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center animate-fade-in" onClick={onClose}>
-              <div className="relative bg-paper/95 dark:bg-dark-bg/95 rounded-xl shadow-2xl border border-ink/10 dark:border-dark-text/10 p-6 w-[calc(100vw-2rem)] max-w-sm text-center" onClick={e => e.stopPropagation()}>
-                  <button onClick={onClose} className="absolute top-2 right-2 p-1 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10" aria-label={t.closeModal}>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-ink dark:text-dark-text" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-                  </button>
-                  <h2 className="text-xl font-bold text-vermilion mb-4">{t.braveDonation}</h2>
-                  <p className="text-ink-light dark:text-dark-text mb-6 text-left">{t.braveDonationDesc}</p>
-                  <a href="https://brave.com/wallet/" target="_blank" rel="noopener noreferrer" className="w-full inline-flex items-center justify-center gap-3 px-4 py-3 bg-vermilion/80 hover:bg-vermilion rounded-lg transition-colors font-semibold text-white">
-                      <img alt="Brave Wallet" className="h-6 w-6" src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg" />
-                      <span>{t.visitBraveWallet}</span>
-                  </a>
-              </div>
-          </div>
+          React.createElement('div', { className: "fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center animate-fade-in", onClick: onClose },
+              React.createElement('div', { className: "relative bg-paper/95 dark:bg-dark-bg/95 rounded-xl shadow-2xl border border-ink/10 dark:border-dark-text/10 p-6 w-[calc(100vw-2rem)] max-w-sm text-center", onClick: e => e.stopPropagation() },
+                  React.createElement('button', { onClick: onClose, className: "absolute top-2 right-2 p-1 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10", 'aria-label': t.closeModal },
+                      React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5 text-ink dark:text-dark-text", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M6 18L18 6M6 6l12 12" }))
+                  ),
+                  React.createElement('h2', { className: "text-xl font-bold text-vermilion mb-4" }, t.braveDonation),
+                  React.createElement('p', { className: "text-ink-light dark:text-dark-text mb-6 text-left" }, t.braveDonationDesc),
+                  React.createElement('a', { href: "https://brave.com/wallet/", target: "_blank", rel: "noopener noreferrer", className: "w-full inline-flex items-center justify-center gap-3 px-4 py-3 bg-vermilion/80 hover:bg-vermilion rounded-lg transition-colors font-semibold text-white" },
+                      React.createElement('img', { alt: "Brave Wallet", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg" }),
+                      React.createElement('span', null, t.visitBraveWallet)
+                  )
+              )
+          )
       );
       const LightboxModal = ({ images, currentIndex, onClose, setCurrentIndex }) => {
           useEffect(() => {
@@ -560,42 +558,42 @@
           const currentImage = images[currentIndex];
 
           return (
-            <div className="fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center animate-fade-in" onClick={onClose}>
-                <div className="relative w-full h-full flex items-center justify-center p-4" onClick={(e) => e.target === e.currentTarget && onClose()}>
-                    <img src={currentImage.url} alt={currentImage.name} className="max-w-[90vw] max-h-[80vh] object-contain rounded-lg shadow-2xl" />
+            React.createElement('div', { className: "fixed inset-0 bg-black/80 backdrop-blur-md z-50 flex items-center justify-center animate-fade-in", onClick: onClose },
+                React.createElement('div', { className: "relative w-full h-full flex items-center justify-center p-4", onClick: (e) => e.target === e.currentTarget && onClose() },
+                    React.createElement('img', { src: currentImage.url, alt: currentImage.name, className: "max-w-[90vw] max-h-[80vh] object-contain rounded-lg shadow-2xl" }),
                     
-                    <button onClick={onClose} className="absolute top-4 right-4 text-white/80 hover:text-white transition-colors" aria-label="Close">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-                    </button>
+                    React.createElement('button', { onClick: onClose, className: "absolute top-4 right-4 text-white/80 hover:text-white transition-colors", 'aria-label': "Close" },
+                        React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-8 w-8", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M6 18L18 6M6 6l12 12" }))
+                    ),
 
-                    {images.length > 1 && (
-                        <>
-                            <button onClick={(e) => { e.stopPropagation(); setCurrentIndex(i => (i - 1 + images.length) % images.length); }} className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-black/30 hover:bg-black/50 rounded-full text-white/80 hover:text-white transition-colors" aria-label="Previous">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" /></svg>
-                            </button>
-                            <button onClick={(e) => { e.stopPropagation(); setCurrentIndex(i => (i + 1) % images.length); }} className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-black/30 hover:bg-black/50 rounded-full text-white/80 hover:text-white transition-colors" aria-label="Next">
-                                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
-                            </button>
-                        </>
-                    )}
+                    images.length > 1 && (
+                        React.createElement(React.Fragment, null,
+                            React.createElement('button', { onClick: (e) => { e.stopPropagation(); setCurrentIndex(i => (i - 1 + images.length) % images.length); }, className: "absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-black/30 hover:bg-black/50 rounded-full text-white/80 hover:text-white transition-colors", 'aria-label': "Previous" },
+                                React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M15 19l-7-7 7-7" }))
+                            ),
+                            React.createElement('button', { onClick: (e) => { e.stopPropagation(); setCurrentIndex(i => (i + 1) % images.length); }, className: "absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-black/30 hover:bg-black/50 rounded-full text-white/80 hover:text-white transition-colors", 'aria-label': "Next" },
+                                React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M9 5l7 7-7 7" }))
+                            )
+                        )
+                    ),
                     
-                    <div className="absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-2 bg-black/50 rounded-lg text-white/90 text-sm font-serif-sc">
-                        {currentImage.name} ({currentIndex + 1} / {images.length})
-                    </div>
-                </div>
-            </div>
+                    React.createElement('div', { className: "absolute bottom-4 left-1/2 -translate-x-1/2 px-4 py-2 bg-black/50 rounded-lg text-white/90 text-sm font-serif-sc" },
+                        `${currentImage.name} (${currentIndex + 1} / ${images.length})`
+                    )
+                )
+            )
           );
       };
       const FeatureUnavailableModal = ({ onClose, t }) => (
-        <div className="fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center animate-fade-in" onClick={onClose}>
-            <div className="relative bg-paper/95 dark:bg-dark-bg/95 rounded-xl shadow-2xl border border-ink/10 dark:border-dark-text/10 p-6 w-[calc(100vw-2rem)] max-w-sm text-center" onClick={e => e.stopPropagation()}>
-                <button onClick={onClose} className="absolute top-2 right-2 p-1 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10" aria-label={t.closeModal}>
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-ink dark:text-dark-text" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-                </button>
-                <h2 className="text-xl font-bold text-vermilion mb-4">{t.featureUnavailable}</h2>
-                <p className="text-ink-light dark:text-dark-text">{t.featureUnavailableDesc}</p>
-            </div>
-        </div>
+        React.createElement('div', { className: "fixed inset-0 bg-black/30 backdrop-blur-sm z-50 flex items-center justify-center animate-fade-in", onClick: onClose },
+            React.createElement('div', { className: "relative bg-paper/95 dark:bg-dark-bg/95 rounded-xl shadow-2xl border border-ink/10 dark:border-dark-text/10 p-6 w-[calc(100vw-2rem)] max-w-sm text-center", onClick: e => e.stopPropagation() },
+                React.createElement('button', { onClick: onClose, className: "absolute top-2 right-2 p-1 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10", 'aria-label': t.closeModal },
+                    React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5 text-ink dark:text-dark-text", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M6 18L18 6M6 6l12 12" }))
+                ),
+                React.createElement('h2', { className: "text-xl font-bold text-vermilion mb-4" }, t.featureUnavailable),
+                React.createElement('p', { className: "text-ink-light dark:text-dark-text" }, t.featureUnavailableDesc)
+            )
+        )
       );
 
       // =================================================================================
@@ -956,93 +954,93 @@
           : { backgroundImage: 'linear-gradient(to right, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff)', backgroundColor: 'transparent' };
 
         const controlsContent = (
-            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 w-full">
-              <button onClick={onInstructions} className={`${buttonBaseClasses} ${enabledClasses} bg-paper dark:bg-ink-light text-ink dark:text-dark-text`} aria-label={t.instructions}>
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-1 1v1a1 1 0 102 0V8a1 1 0 00-1-1zM9 12a1 1 0 112 0v3a1 1 0 11-2 0v-3z" clipRule="evenodd" />
-                  </svg>
-              </button>
-              <div className="flex items-center gap-2">
-                {['#3f312b', '#c84c4c'].map((color, index) => (
-                  <button key={color} onClick={() => handleSwatchClick(color)} className={`w-6 h-6 rounded-full transition-transform duration-150 border-2 ${clickedSwatch === color ? 'ring-2 ring-offset-2 dark:ring-offset-dark-bg ring-vermilion border-transparent' : 'border-ink/20 dark:border-dark-text/20'}`} style={{ backgroundColor: color }} aria-label={index === 0 ? t.setBrushColorInk : t.setBrushColorVermilion} />
-                ))}
-                <div className="relative" ref={pickerRef}>
-                    <button onClick={() => setIsPickerOpen(prev => !prev)} className="w-6 h-6 rounded-full transition-transform duration-150 border-2 border-ink/20 dark:border-dark-text/20 bg-cover" style={customColorButtonStyle} aria-label={t.openColorPicker} />
-                    {isPickerOpen && (
-                        <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 p-4 bg-paper dark:bg-dark-bg rounded-lg shadow-2xl z-10 w-60 border border-ink/10 dark:border-dark-text/10">
-                           <h3 className="text-sm font-semibold mb-3 text-ink dark:text-dark-text text-left">{t.customColor}</h3>
-                           <div className="space-y-3">
-                                <div ref={svPanelRef} {...svPanelDraggable} className="w-full h-32 rounded cursor-pointer relative" style={{ backgroundColor: `hsl(${hsv.h * 360}, 100%, 50%)` }}>
-                                    <div className="absolute inset-0" style={{ background: 'linear-gradient(to right, white, transparent)' }} />
-                                    <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, black, transparent)' }} />
-                                    <div className="w-3 h-3 rounded-full border-2 border-white shadow-md absolute transform -translate-x-1/2 -translate-y-1/2 pointer-events-none" style={{ top: `${(1 - hsv.v) * 100}%`, left: `${hsv.s * 100}%` }} />
-                                </div>
-                                <div ref={hueSliderRef} {...hueSliderDraggable} className="w-full h-4 rounded cursor-pointer relative" style={{ background: 'linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00)' }}>
-                                    <div className="w-1 h-5 rounded-sm border-2 border-white shadow-md absolute transform -translate-x-1/2 -translate-y-[2px] pointer-events-none" style={{ left: `${hsv.h * 100}%` }} />
-                                </div>
-                                <div ref={alphaSliderRef} {...alphaSliderDraggable} className="w-full h-4 rounded cursor-pointer relative bg-white" style={{ backgroundImage: `linear-gradient(to right, transparent, hsl(${hsv.h * 360}, ${hsv.s * 100}%, ${hsv.v * 50}%)), url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='5' height='5' x='0' y='0' fill='%23ccc'/%3E%3Crect width='5' height='5' x='5' y='5' fill='%23ccc'/%3E%3C/svg%3E")` }}>
-                                    <div className="w-1 h-5 rounded-sm border-2 border-white shadow-md absolute transform -translate-x-1/2 -translate-y-[2px] pointer-events-none" style={{ left: `${hsv.a * 100}%` }} />
-                                </div>
-                                <div className="flex items-center justify-between mt-2">
-                                    <div className="w-8 h-8 rounded border border-ink/20 dark:border-dark-text/20 bg-cover" style={{ backgroundColor: `rgba(${hsvToRgb(hsv.h, hsv.s, hsv.v).r}, ${hsvToRgb(hsv.h, hsv.s, hsv.v).g}, ${hsvToRgb(hsv.h, hsv.s, hsv.v).b}, ${hsv.a})`, backgroundImage: `url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='5' height='5' x='0' y='0' fill='%23ccc'/%3E%3Crect width='5' height='5' x='5' y='5' fill='%23ccc'/%3E%3C/svg%3E")` }} />
-                                    <span className="text-xs font-mono text-ink-light dark:text-dark-text">{`rgba(${hsvToRgb(hsv.h, hsv.s, hsv.v).r}, ${hsvToRgb(hsv.h, hsv.s, hsv.v).g}, ${hsvToRgb(hsv.h, hsv.s, hsv.v).b}, ${hsv.a.toFixed(2)})`}</span>
-                                </div>
-                            </div>
-                        </div>
-                    )}
-                </div>
-              </div>
+            React.createElement('div', { className: "flex flex-wrap items-center justify-center gap-2 sm:gap-4 w-full" },
+              React.createElement('button', { onClick: onInstructions, className: `${buttonBaseClasses} ${enabledClasses} bg-paper dark:bg-ink-light text-ink dark:text-dark-text`, 'aria-label': t.instructions },
+                  React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5", viewBox: "0 0 20 20", fill: "currentColor" },
+                      React.createElement('path', { fillRule: "evenodd", d: "M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-1 1v1a1 1 0 102 0V8a1 1 0 00-1-1zM9 12a1 1 0 112 0v3a1 1 0 11-2 0v-3z", clipRule: "evenodd" })
+                  )
+              ),
+              React.createElement('div', { className: "flex items-center gap-2" },
+                ...['#3f312b', '#c84c4c'].map((color, index) => (
+                  React.createElement('button', { key: color, onClick: () => handleSwatchClick(color), className: `w-6 h-6 rounded-full transition-transform duration-150 border-2 ${clickedSwatch === color ? 'ring-2 ring-offset-2 dark:ring-offset-dark-bg ring-vermilion border-transparent' : 'border-ink/20 dark:border-dark-text/20'}`, style: { backgroundColor: color }, 'aria-label': index === 0 ? t.setBrushColorInk : t.setBrushColorVermilion })
+                )),
+                React.createElement('div', { className: "relative", ref: pickerRef },
+                    React.createElement('button', { onClick: () => setIsPickerOpen(prev => !prev), className: "w-6 h-6 rounded-full transition-transform duration-150 border-2 border-ink/20 dark:border-dark-text/20 bg-cover", style: customColorButtonStyle, 'aria-label': t.openColorPicker }),
+                    isPickerOpen && (
+                        React.createElement('div', { className: "absolute bottom-full mb-2 left-1/2 -translate-x-1/2 p-4 bg-paper dark:bg-dark-bg rounded-lg shadow-2xl z-10 w-60 border border-ink/10 dark:border-dark-text/10" },
+                           React.createElement('h3', { className: "text-sm font-semibold mb-3 text-ink dark:text-dark-text text-left" }, t.customColor),
+                           React.createElement('div', { className: "space-y-3" },
+                                React.createElement('div', { ref: svPanelRef, ...svPanelDraggable, className: "w-full h-32 rounded cursor-pointer relative", style: { backgroundColor: `hsl(${hsv.h * 360}, 100%, 50%)` } },
+                                    React.createElement('div', { className: "absolute inset-0", style: { background: 'linear-gradient(to right, white, transparent)' } }),
+                                    React.createElement('div', { className: "absolute inset-0", style: { background: 'linear-gradient(to top, black, transparent)' } }),
+                                    React.createElement('div', { className: "w-3 h-3 rounded-full border-2 border-white shadow-md absolute transform -translate-x-1/2 -translate-y-1/2 pointer-events-none", style: { top: `${(1 - hsv.v) * 100}%`, left: `${hsv.s * 100}%` } })
+                                ),
+                                React.createElement('div', { ref: hueSliderRef, ...hueSliderDraggable, className: "w-full h-4 rounded cursor-pointer relative", style: { background: 'linear-gradient(to right, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00)' } },
+                                    React.createElement('div', { className: "w-1 h-5 rounded-sm border-2 border-white shadow-md absolute transform -translate-x-1/2 -translate-y-[2px] pointer-events-none", style: { left: `${hsv.h * 100}%` } })
+                                ),
+                                React.createElement('div', { ref: alphaSliderRef, ...alphaSliderDraggable, className: "w-full h-4 rounded cursor-pointer relative bg-white", style: { backgroundImage: `linear-gradient(to right, transparent, hsl(${hsv.h * 360}, ${hsv.s * 100}%, ${hsv.v * 50}%)), url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='5' height='5' x='0' y='0' fill='%23ccc'/%3E%3Crect width='5' height='5' x='5' y='5' fill='%23ccc'/%3E%3C/svg%3E")` } },
+                                    React.createElement('div', { className: "w-1 h-5 rounded-sm border-2 border-white shadow-md absolute transform -translate-x-1/2 -translate-y-[2px] pointer-events-none", style: { left: `${hsv.a * 100}%` } })
+                                ),
+                                React.createElement('div', { className: "flex items-center justify-between mt-2" },
+                                    React.createElement('div', { className: "w-8 h-8 rounded border border-ink/20 dark:border-dark-text/20 bg-cover", style: { backgroundColor: `rgba(${hsvToRgb(hsv.h, hsv.s, hsv.v).r}, ${hsvToRgb(hsv.h, hsv.s, hsv.v).g}, ${hsvToRgb(hsv.h, hsv.s, hsv.v).b}, ${hsv.a})`, backgroundImage: `url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='5' height='5' x='0' y='0' fill='%23ccc'/%3E%3Crect width='5' height='5' x='5' y='5' fill='%23ccc'/%3E%3C/svg%3E")` } }),
+                                    React.createElement('span', { className: "text-xs font-mono text-ink-light dark:text-dark-text" }, `rgba(${hsvToRgb(hsv.h, hsv.s, hsv.v).r}, ${hsvToRgb(hsv.h, hsv.s, hsv.v).g}, ${hsvToRgb(hsv.h, hsv.s, hsv.v).b}, ${hsv.a.toFixed(2)})`)
+                                )
+                            )
+                        )
+                    )
+                )
+              ),
               
-              <div className="flex items-center gap-2">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-ink-light dark:text-dark-text" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.5L15.232 5.232z" /></svg>
-                  <input type="range" min="1" max="100" value={brushSize} onChange={(e) => setBrushSize(Number(e.target.value))} className="w-20 sm:w-24 h-2 bg-ink/20 dark:bg-dark-text/20 rounded-lg appearance-none cursor-pointer accent-vermilion" aria-label={t.brushSize} />
-              </div>
+              React.createElement('div', { className: "flex items-center gap-2" },
+                  React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5 text-ink-light dark:text-dark-text", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.5L15.232 5.232z" })),
+                  React.createElement('input', { type: "range", min: "1", max: "100", value: brushSize, onChange: (e) => setBrushSize(Number(e.target.value)), className: "w-20 sm:w-24 h-2 bg-ink/20 dark:bg-dark-text/20 rounded-lg appearance-none cursor-pointer accent-vermilion", 'aria-label': t.brushSize })
+              ),
 
-              <div className="flex items-center gap-2">
-                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-ink-light dark:text-dark-text" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 22C12 22 6 15.29 6 10.2C6 5.22 8.69 2 12 2C15.31 2 18 5.22 18 10.2C18 15.29 12 22 12 22Z" /></svg>
-                  <input type="range" min="0" max="100" value={waterAmount} onChange={(e) => setWaterAmount(Number(e.target.value))} className="w-20 sm:w-24 h-2 bg-ink/20 dark:bg-dark-text/20 rounded-lg appearance-none cursor-pointer accent-vermilion" aria-label={t.waterAmount} />
-              </div>
+              React.createElement('div', { className: "flex items-center gap-2" },
+                   React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5 text-ink-light dark:text-dark-text", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M12 22C12 22 6 15.29 6 10.2C6 5.22 8.69 2 12 2C15.31 2 18 5.22 18 10.2C18 15.29 12 22 12 22Z" })),
+                  React.createElement('input', { type: "range", min: "0", max: "100", value: waterAmount, onChange: (e) => setWaterAmount(Number(e.target.value)), className: "w-20 sm:w-24 h-2 bg-ink/20 dark:bg-dark-text/20 rounded-lg appearance-none cursor-pointer accent-vermilion", 'aria-label': t.waterAmount })
+              ),
 
-              <div className="flex items-center gap-2">
-                  <button onClick={onUndo} disabled={!canUndo} className={`${buttonBaseClasses} ${!canUndo ? disabledClasses : enabledClasses} bg-paper dark:bg-ink-light text-ink dark:text-dark-text`} aria-label={t.undo}>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z" clipRule="evenodd" /></svg>
-                  </button>
-                  <button onClick={onRedo} disabled={!canRedo} className={`${buttonBaseClasses} ${!canRedo ? disabledClasses : enabledClasses} bg-paper dark:bg-ink-light text-ink dark:text-dark-text`} aria-label={t.redo}>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
-                  </button>
-                  <button onClick={onClear} className={`${buttonBaseClasses} ${enabledClasses} bg-vermilion/80 hover:bg-vermilion text-white`} aria-label={t.clear}>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm4 0a1 1 0 012 0v6a1 1 0 11-2 0V8z" clipRule="evenodd" /></svg>
-                  </button>
-              </div>
-               <div className="flex items-center gap-2">
-                  <button onClick={onDownloadClick} className={`${buttonBaseClasses} ${enabledClasses} bg-paper dark:bg-ink-light text-ink dark:text-dark-text`} aria-label={t.download}>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
-                  </button>
-                  <button onClick={onMintClick} className={`${buttonBaseClasses} ${enabledClasses} bg-paper dark:bg-ink-light text-ink dark:text-dark-text`} aria-label={t.uploadAsNFT}>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-                          <path fillRule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z" clipRule="evenodd" opacity="0.6" />
-                          <text x="10" y="12" textAnchor="middle" dominantBaseline="middle" fontSize="6" fontWeight="bold" className="fill-ink dark:fill-dark-text">NFT</text>
-                      </svg>
-                  </button>
-              </div>
-            </div>
+              React.createElement('div', { className: "flex items-center gap-2" },
+                  React.createElement('button', { onClick: onUndo, disabled: !canUndo, className: `${buttonBaseClasses} ${!canUndo ? disabledClasses : enabledClasses} bg-paper dark:bg-ink-light text-ink dark:text-dark-text`, 'aria-label': t.undo },
+                      React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5", viewBox: "0 0 20 20", fill: "currentColor" }, React.createElement('path', { fillRule: "evenodd", d: "M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z", clipRule: "evenodd" }))
+                  ),
+                  React.createElement('button', { onClick: onRedo, disabled: !canRedo, className: `${buttonBaseClasses} ${!canRedo ? disabledClasses : enabledClasses} bg-paper dark:bg-ink-light text-ink dark:text-dark-text`, 'aria-label': t.redo },
+                      React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5", viewBox: "0 0 20 20", fill: "currentColor" }, React.createElement('path', { fillRule: "evenodd", d: "M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z", clipRule: "evenodd" }))
+                  ),
+                  React.createElement('button', { onClick: onClear, className: `${buttonBaseClasses} ${enabledClasses} bg-vermilion/80 hover:bg-vermilion text-white`, 'aria-label': t.clear },
+                      React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5", viewBox: "0 0 20 20", fill: "currentColor" }, React.createElement('path', { fillRule: "evenodd", d: "M9 2a1 1 0 00-.894.553L7.382 4H4a1 1 0 000 2v10a2 2 0 002 2h8a2 2 0 002-2V6a1 1 0 100-2h-3.382l-.724-1.447A1 1 0 0011 2H9zM7 8a1 1 0 012 0v6a1 1 0 11-2 0V8zm4 0a1 1 0 012 0v6a1 1 0 11-2 0V8z", clipRule: "evenodd" }))
+                  )
+              ),
+               React.createElement('div', { className: "flex items-center gap-2" },
+                  React.createElement('button', { onClick: onDownloadClick, className: `${buttonBaseClasses} ${enabledClasses} bg-paper dark:bg-ink-light text-ink dark:text-dark-text`, 'aria-label': t.download },
+                      React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5", viewBox: "0 0 20 20", fill: "currentColor" }, React.createElement('path', { fillRule: "evenodd", d: "M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z", clipRule: "evenodd" }))
+                  ),
+                  React.createElement('button', { onClick: onMintClick, className: `${buttonBaseClasses} ${enabledClasses} bg-paper dark:bg-ink-light text-ink dark:text-dark-text`, 'aria-label': t.uploadAsNFT },
+                      React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5", viewBox: "0 0 20 20", fill: "currentColor" },
+                          React.createElement('path', { fillRule: "evenodd", d: "M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM6.293 6.707a1 1 0 010-1.414l3-3a1 1 0 011.414 0l3 3a1 1 0 01-1.414 1.414L11 5.414V13a1 1 0 11-2 0V5.414L7.707 6.707a1 1 0 01-1.414 0z", clipRule: "evenodd", opacity: "0.6" }),
+                          React.createElement('text', { x: "10", y: "12", textAnchor: "middle", dominantBaseline: "middle", fontSize: "6", fontWeight: "bold", className: "fill-ink dark:fill-dark-text" }, "NFT")
+                      )
+                  )
+              )
+            )
         );
 
         if (isCompactLayout) {
             return (
-                <div className="relative w-full flex justify-center" ref={controlsPanelRef}>
-                    <button onClick={() => setIsControlsExpanded(p => !p)} className={`${buttonBaseClasses} ${enabledClasses} bg-paper dark:bg-ink-light text-ink dark:text-dark-text`} aria-label={t.toggleControls}>
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                        </svg>
-                    </button>
-                    {isControlsExpanded && (
-                        <div className="absolute bottom-full mb-3 p-3 bg-paper/90 dark:bg-dark-bg/90 backdrop-blur-sm rounded-lg shadow-2xl border border-ink/10 dark:border-dark-text/10 animate-fade-in">
-                           {controlsContent}
-                        </div>
-                    )}
-                </div>
+                React.createElement('div', { className: "relative w-full flex justify-center", ref: controlsPanelRef },
+                    React.createElement('button', { onClick: () => setIsControlsExpanded(p => !p), className: `${buttonBaseClasses} ${enabledClasses} bg-paper dark:bg-ink-light text-ink dark:text-dark-text`, 'aria-label': t.toggleControls },
+                        React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" },
+                            React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" }),
+                            React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M15 12a3 3 0 11-6 0 3 3 0 016 0z" })
+                        )
+                    ),
+                    isControlsExpanded && (
+                        React.createElement('div', { className: "absolute bottom-full mb-3 p-3 bg-paper/90 dark:bg-dark-bg/90 backdrop-blur-sm rounded-lg shadow-2xl border border-ink/10 dark:border-dark-text/10 animate-fade-in" },
+                           controlsContent
+                        )
+                    )
+                )
             )
         }
         return controlsContent;
@@ -1053,62 +1051,62 @@
         
         if (isMobile) {
             return (
-                <div className="flex flex-col gap-2 items-start w-full">
-                    <button onClick={onConnectWallet} className={`flex items-center gap-3 p-2 rounded-md w-full ${textColorClasses} hover:bg-ink/10 dark:hover:bg-dark-text/10`}>
-                        {walletAddress ? (
-                            <>
-                                <ChainIcon chainId={chainId} className="h-6 w-6" />
-                                <span className="font-mono text-sm">{shortenAddress(walletAddress)}</span>
-                            </>
+                React.createElement('div', { className: "flex flex-col gap-2 items-start w-full" },
+                    React.createElement('button', { onClick: onConnectWallet, className: `flex items-center gap-3 p-2 rounded-md w-full ${textColorClasses} hover:bg-ink/10 dark:hover:bg-dark-text/10` },
+                        walletAddress ? (
+                            React.createElement(React.Fragment, null,
+                                React.createElement(ChainIcon, { chainId: chainId, className: "h-6 w-6" }),
+                                React.createElement('span', { className: "font-mono text-sm" }, shortenAddress(walletAddress))
+                            )
                         ) : (
-                            <>
-                                <WalletIcon className="h-6 w-6" />
-                                <span>{t.connectWallet}</span>
-                            </>
-                        )}
-                    </button>
-                    <button onClick={handleBatClick} className={`flex items-center gap-3 p-2 rounded-md w-full ${textColorClasses} hover:bg-ink/10 dark:hover:bg-dark-text/10`}>
-                        <img alt="Brave Wallet" className="h-6 w-6" src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg" />
-                        <span>Brave Wallet</span>
-                    </button>
-                    <button onClick={() => setLang(lang === 'zh-TW' ? 'en' : 'zh-TW')} className={`flex items-center gap-3 p-2 rounded-md w-full ${textColorClasses} hover:bg-ink/10 dark:hover:bg-dark-text/10`}>
-                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M3 5h12M9 3v2m4 13l4-4M19 17v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2m14-8a2 2 0 10-4 0 2 2 0 004 0zM3 21h18" /></svg>
-                       <span>中/En</span>
-                    </button>
-                    <button onClick={() => setIsDarkMode(p => !p)} className={`flex items-center gap-3 p-2 rounded-md w-full ${textColorClasses} hover:bg-ink/10 dark:hover:bg-dark-text/10`}>
-                       {isDarkMode ? 
-                           (<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>) : 
-                           (<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>)}
-                       <span>{t.toggleTheme}</span>
-                    </button>
-                </div>
+                            React.createElement(React.Fragment, null,
+                                React.createElement(WalletIcon, { className: "h-6 w-6" }),
+                                React.createElement('span', null, t.connectWallet)
+                            )
+                        )
+                    ),
+                    React.createElement('button', { onClick: handleBatClick, className: `flex items-center gap-3 p-2 rounded-md w-full ${textColorClasses} hover:bg-ink/10 dark:hover:bg-dark-text/10` },
+                        React.createElement('img', { alt: "Brave Wallet", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg" }),
+                        React.createElement('span', null, "Brave Wallet")
+                    ),
+                    React.createElement('button', { onClick: () => setLang(lang === 'zh-TW' ? 'en' : 'zh-TW'), className: `flex items-center gap-3 p-2 rounded-md w-full ${textColorClasses} hover:bg-ink/10 dark:hover:bg-dark-text/10` },
+                       React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M3 5h12M9 3v2m4 13l4-4M19 17v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2m14-8a2 2 0 10-4 0 2 2 0 004 0zM3 21h18" })),
+                       React.createElement('span', null, "中/En")
+                    ),
+                    React.createElement('button', { onClick: () => setIsDarkMode(p => !p), className: `flex items-center gap-3 p-2 rounded-md w-full ${textColorClasses} hover:bg-ink/10 dark:hover:bg-dark-text/10` },
+                       isDarkMode ? 
+                           (React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" }))) : 
+                           (React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" }))),
+                       React.createElement('span', null, t.toggleTheme)
+                    )
+                )
             )
         }
 
         return (
-            <div className="flex items-center gap-2 sm:gap-4">
-                <button onClick={onConnectWallet} title={t.wallet} className={`${textColorClasses} p-1.5 rounded-md hover:bg-ink/10 dark:hover:bg-dark-text/10 flex items-center gap-2`}>
-                    {walletAddress ? (
-                        <>
-                            <ChainIcon chainId={chainId} className="h-5 w-5" />
-                            <span className="text-sm font-mono">{shortenAddress(walletAddress)}</span>
-                        </>
+            React.createElement('div', { className: "flex items-center gap-2 sm:gap-4" },
+                React.createElement('button', { onClick: onConnectWallet, title: t.wallet, className: `${textColorClasses} p-1.5 rounded-md hover:bg-ink/10 dark:hover:bg-dark-text/10 flex items-center gap-2` },
+                    walletAddress ? (
+                        React.createElement(React.Fragment, null,
+                            React.createElement(ChainIcon, { chainId: chainId, className: "h-5 w-5" }),
+                            React.createElement('span', { className: "text-sm font-mono" }, shortenAddress(walletAddress))
+                        )
                     ) : (
-                        <WalletIcon className="h-6 w-6" />
-                    )}
-                </button>
-                <button onClick={handleBatClick} className="p-1 rounded-full" title="Brave Wallet">
-                    <img alt="Brave Wallet" className="h-6 w-6" src="https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg" />
-                </button>
-                <button onClick={() => setLang(lang === 'zh-TW' ? 'en' : 'zh-TW')} className={`text-sm font-semibold ${textColorClasses} transition-colors`} aria-label={t.toggleLanguage}>
-                    中/En
-                </button>
-                <button onClick={() => setIsDarkMode(p => !p)} className={`${textColorClasses} p-1 rounded-full transition-colors`} aria-label={t.toggleTheme}>
-                    {isDarkMode ? 
-                        (<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>) : 
-                        (<svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" /></svg>)}
-                </button>
-            </div>
+                        React.createElement(WalletIcon, { className: "h-6 w-6" })
+                    )
+                ),
+                React.createElement('button', { onClick: handleBatClick, className: "p-1 rounded-full", title: "Brave Wallet" },
+                    React.createElement('img', { alt: "Brave Wallet", className: "h-6 w-6", src: "https://upload.wikimedia.org/wikipedia/commons/a/ac/Brave_Basic_Attention_Token_%28BAT%29_Logo.svg" })
+                ),
+                React.createElement('button', { onClick: () => setLang(lang === 'zh-TW' ? 'en' : 'zh-TW'), className: `text-sm font-semibold ${textColorClasses} transition-colors`, 'aria-label': t.toggleLanguage },
+                    "中/En"
+                ),
+                React.createElement('button', { onClick: () => setIsDarkMode(p => !p), className: `${textColorClasses} p-1 rounded-full transition-colors`, 'aria-label': t.toggleTheme },
+                    isDarkMode ? 
+                        (React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" }))) : 
+                        (React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" })))
+                )
+            )
         );
       };
       const Header = ({ setPage, currentPage, t, lang, setLang, isDarkMode, setIsDarkMode, handleBatClick, onConnectWallet, walletAddress, chainId, onGalleryClick, className = '' }) => {
@@ -1146,65 +1144,65 @@
           };
 
           return (
-              <>
-                  <header className={`flex items-center justify-between p-4 sm:p-6 text-ink dark:text-dark-text ${className}`}>
-                      <div className="flex items-center gap-3 cursor-pointer" onClick={() => setPage('welcome')}>
-                          <BrandIcon className="h-8 w-8" />
-                          <div className="font-bold text-xl tracking-wider sm:block">
-                              S<span className="text-vermilion">in</span>g<span className="text-vermilion">k</span>nature
-                          </div>
-                      </div>
+              React.createElement(React.Fragment, null,
+                  React.createElement('header', { className: `flex items-center justify-between p-4 sm:p-6 text-ink dark:text-dark-text ${className}` },
+                      React.createElement('div', { className: "flex items-center gap-3 cursor-pointer", onClick: () => setPage('welcome') },
+                          React.createElement(BrandIcon, { className: "h-8 w-8" }),
+                          React.createElement('div', { className: "font-bold text-xl tracking-wider sm:block" },
+                              "S", React.createElement('span', { className: "text-vermilion" }, "in"), "g", React.createElement('span', { className: "text-vermilion" }, "k"), "nature"
+                          )
+                      ),
                       
-                      {/* Desktop Menu */}
-                      <div className={isMobileLayout ? 'hidden' : 'flex items-center gap-4'}>
-                          <nav className="flex items-center gap-2">
-                              {navItems.map(item => 
-                                  <button 
-                                      key={item.page} 
-                                      onClick={() => handleNavClick(item)} 
-                                      className={navItemClasses(item.page)}
-                                  >
-                                      {item.name}
-                                  </button>
-                              )}
-                          </nav>
-                          <HeaderActions t={t} lang={lang} setLang={setLang} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} handleBatClick={handleBatClick} onConnectWallet={onConnectWallet} walletAddress={walletAddress} chainId={chainId} />
-                      </div>
+                      /* Desktop Menu */
+                      React.createElement('div', { className: isMobileLayout ? 'hidden' : 'flex items-center gap-4' },
+                          React.createElement('nav', { className: "flex items-center gap-2" },
+                              ...navItems.map(item => 
+                                  React.createElement('button', {
+                                      key: item.page,
+                                      onClick: () => handleNavClick(item),
+                                      className: navItemClasses(item.page)
+                                  },
+                                      item.name
+                                  )
+                              )
+                          ),
+                          React.createElement(HeaderActions, { t: t, lang: lang, setLang: setLang, isDarkMode: isDarkMode, setIsDarkMode: setIsDarkMode, handleBatClick: handleBatClick, onConnectWallet: onConnectWallet, walletAddress: walletAddress, chainId: chainId })
+                      ),
 
-                      {/* Mobile Menu Button */}
-                      <div className={isMobileLayout ? 'block' : 'hidden'}>
-                          <button onClick={() => setIsMenuOpen(true)} className="p-2 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10" aria-label={t.openMenu}>
-                              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" /></svg>
-                          </button>
-                      </div>
-                  </header>
+                      /* Mobile Menu Button */
+                      React.createElement('div', { className: isMobileLayout ? 'block' : 'hidden' },
+                          React.createElement('button', { onClick: () => setIsMenuOpen(true), className: "p-2 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10", 'aria-label': t.openMenu },
+                              React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M4 6h16M4 12h16M4 18h16" }))
+                          )
+                      )
+                  ),
 
-                  {/* Mobile Menu Panel */}
-                  {isMenuOpen && (
-                      <>
-                          <div className="fixed inset-0 bg-black/30 backdrop-blur-sm z-40" onClick={() => setIsMenuOpen(false)} />
-                          <div className="fixed top-4 left-4 w-[calc(100vw-2rem)] max-w-sm p-6 bg-paper/95 dark:bg-dark-bg/95 rounded-xl shadow-2xl border border-ink/10 dark:border-dark-text/10 z-50 animate-slide-in-left max-h-[calc(100vh-2rem)] overflow-y-auto text-ink dark:text-dark-text">
-                              <div className="flex justify-between items-center mb-6">
-                                  <h2 className="text-xl font-bold text-vermilion">{t.menu}</h2>
-                                  <button onClick={() => setIsMenuOpen(false)} className="p-1 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10" aria-label={t.closeMenu}>
-                                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
-                                  </button>
-                              </div>
-                              <nav className="flex flex-col gap-2">
-                                  {navItems.map(item => 
-                                      <button key={item.page} onClick={() => handleNavClick(item)} className={navItemClasses(item.page, true)}>
-                                          {item.name}
-                                      </button>
-                                  )}
-                              </nav>
-                              <hr className="my-4 border-ink/10 dark:border-dark-text/10" />
-                              <div className="flex flex-col gap-2">
-                                <HeaderActions t={t} lang={lang} setLang={setLang} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} handleBatClick={handleBatClick} isMobile={true} onConnectWallet={onConnectWallet} walletAddress={walletAddress} chainId={chainId} />
-                              </div>
-                          </div>
-                      </>
-                  )}
-              </>
+                  /* Mobile Menu Panel */
+                  isMenuOpen && (
+                      React.createElement(React.Fragment, null,
+                          React.createElement('div', { className: "fixed inset-0 bg-black/30 backdrop-blur-sm z-40", onClick: () => setIsMenuOpen(false) }),
+                          React.createElement('div', { className: "fixed top-4 left-4 w-[calc(100vw-2rem)] max-w-sm p-6 bg-paper/95 dark:bg-dark-bg/95 rounded-xl shadow-2xl border border-ink/10 dark:border-dark-text/10 z-50 animate-slide-in-left max-h-[calc(100vh-2rem)] overflow-y-auto text-ink dark:text-dark-text" },
+                              React.createElement('div', { className: "flex justify-between items-center mb-6" },
+                                  React.createElement('h2', { className: "text-xl font-bold text-vermilion" }, t.menu),
+                                  React.createElement('button', { onClick: () => setIsMenuOpen(false), className: "p-1 rounded-full hover:bg-ink/10 dark:hover:bg-dark-text/10", 'aria-label': t.closeMenu },
+                                      React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-5 w-5", fill: "none", viewBox: "0 0 24 24", stroke: "currentColor", strokeWidth: "2" }, React.createElement('path', { strokeLinecap: "round", strokeLinejoin: "round", d: "M6 18L18 6M6 6l12 12" }))
+                                  )
+                              ),
+                              React.createElement('nav', { className: "flex flex-col gap-2" },
+                                  ...navItems.map(item => 
+                                      React.createElement('button', { key: item.page, onClick: () => handleNavClick(item), className: navItemClasses(item.page, true) },
+                                          item.name
+                                      )
+                                  )
+                              ),
+                              React.createElement('hr', { className: "my-4 border-ink/10 dark:border-dark-text/10" }),
+                              React.createElement('div', { className: "flex flex-col gap-2" },
+                                React.createElement(HeaderActions, { t: t, lang: lang, setLang: setLang, isDarkMode: isDarkMode, setIsDarkMode: setIsDarkMode, handleBatClick: handleBatClick, isMobile: true, onConnectWallet: onConnectWallet, walletAddress: walletAddress, chainId: chainId })
+                              )
+                          )
+                      )
+                  )
+              )
           );
       };
 
@@ -1213,183 +1211,192 @@
       // =================================================================================
       const WelcomePage = ({ setPage, t, lang, setLang, isDarkMode, setIsDarkMode, currentPage, handleBatClick, walletAddress, onConnectWallet, chainId, onGalleryClick }) => {
           return (
-              <div className="relative flex flex-col items-center justify-center min-h-screen bg-paper dark:bg-dark-bg bg-grid-light dark:bg-grid-dark text-ink dark:text-dark-text p-4 transition-colors duration-300 overflow-hidden">
-                  <Header setPage={setPage} currentPage={currentPage} t={t} lang={lang} setLang={setLang} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} handleBatClick={handleBatClick} walletAddress={walletAddress} onConnectWallet={onConnectWallet} chainId={chainId} onGalleryClick={onGalleryClick} className="absolute top-0 left-0 right-0 z-30" />
-                  <main className="text-center flex flex-col items-center justify-center flex-grow animate-fade-in pt-20 pb-24 w-full">
-                      <h1 className="text-4xl sm:text-6xl lg:text-8xl font-serif-sc font-bold tracking-wider my-8 text-shadow flex flex-col sm:flex-row flex-wrap justify-center items-center gap-y-2 sm:gap-y-0 sm:gap-x-4">
-                          <span>
-                            S<span className="text-vermilion">in</span>g<span className="text-vermilion">k</span>nature
-                          </span>
-                          <span>
-                            神韻 · <span className="text-vermilion">墨</span>跡
-                          </span>
-                      </h1>
-                      <p className="text-md sm:text-lg max-w-2xl mx-auto leading-relaxed text-ink-light dark:text-dark-text/90">
-                          {t.aboutAppDesc}
-                      </p>
-                      <div className="flex flex-col items-stretch sm:flex-row sm:items-center justify-center gap-6 mt-12">
-                          <button 
-                              onClick={() => setPage('canvas')} 
-                              className="px-8 py-3 bg-vermilion text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-red-700 transition-all duration-300 transform hover:scale-105">
-                              {t.startCreating}
-                          </button>
-                          <VoteButton t={t} />
-                      </div>
-                  </main>
-                  <footer className="absolute bottom-4 sm:bottom-8 text-center text-sm text-ink-light dark:text-dark-text/70">
-                      <div className="border border-ink/10 dark:border-dark-text/30 rounded-lg p-3 sm:p-4 bg-paper/50 dark:bg-dark-bg/50 backdrop-blur-sm">
-                          <p>{t.competitionNotice}</p>
-                          <a href="https://get.unstoppabledomains.com/brave-website-competition/" target="_blank" rel="noopener noreferrer" className="text-vermilion hover:underline">
-                              {t.learnMore}
-                          </a>
-                      </div>
-                  </footer>
-                  <style>{`
+              React.createElement('div', { className: "relative flex flex-col items-center justify-center min-h-screen bg-paper dark:bg-dark-bg bg-grid-light dark:bg-grid-dark text-ink dark:text-dark-text p-4 transition-colors duration-300 overflow-hidden" },
+                  React.createElement(Header, { setPage: setPage, currentPage: currentPage, t: t, lang: lang, setLang: setLang, isDarkMode: isDarkMode, setIsDarkMode: setIsDarkMode, handleBatClick: handleBatClick, walletAddress: walletAddress, onConnectWallet: onConnectWallet, chainId: chainId, onGalleryClick: onGalleryClick, className: "absolute top-0 left-0 right-0 z-30" }),
+                  React.createElement('main', { className: "text-center flex flex-col items-center justify-center flex-grow animate-fade-in pt-20 pb-24 w-full" },
+                      React.createElement('h1', { className: "text-4xl sm:text-6xl lg:text-8xl font-serif-sc font-bold tracking-wider my-8 text-shadow flex flex-col sm:flex-row flex-wrap justify-center items-center gap-y-2 sm:gap-y-0 sm:gap-x-4" },
+                          React.createElement('span', null,
+                            "S", React.createElement('span', { className: "text-vermilion" }, "in"), "g", React.createElement('span', { className: "text-vermilion" }, "k"), "nature"
+                          ),
+                          React.createElement('span', null,
+                            "神韻 · ", React.createElement('span', { className: "text-vermilion" }, "墨"), "跡"
+                          )
+                      ),
+                      React.createElement('p', { className: "text-md sm:text-lg max-w-2xl mx-auto leading-relaxed text-ink-light dark:text-dark-text/90" },
+                          t.aboutAppDesc
+                      ),
+                      React.createElement('div', { className: "flex flex-col items-stretch sm:flex-row sm:items-center justify-center gap-6 mt-12" },
+                          React.createElement('button', {
+                              onClick: () => setPage('canvas'),
+                              className: "px-8 py-3 bg-vermilion text-white text-lg font-semibold rounded-lg shadow-lg hover:bg-red-700 transition-all duration-300 transform hover:scale-105" },
+                              t.startCreating
+                          ),
+                          React.createElement(VoteButton, { t: t })
+                      )
+                  ),
+                  React.createElement('footer', { className: "absolute bottom-4 sm:bottom-8 text-center text-sm text-ink-light dark:text-dark-text/70" },
+                      React.createElement('div', { className: "border border-ink/10 dark:border-dark-text/30 rounded-lg p-3 sm:p-4 bg-paper/50 dark:bg-dark-bg/50 backdrop-blur-sm" },
+                          React.createElement('p', null, t.competitionNotice),
+                          React.createElement('a', { href: "https://get.unstoppabledomains.com/brave-website-competition/", target: "_blank", rel: "noopener noreferrer", className: "text-vermilion hover:underline" },
+                              t.learnMore
+                          )
+                      )
+                  ),
+                  React.createElement('style', null, `
                       .text-shadow { text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
                       .dark .text-shadow { text-shadow: 0 2px 10px rgba(0,0,0,0.8); }
-                  `}</style>
-              </div>
+                  `)
+              )
           );
       };
       const BraveScoringPage = ({ setPage, currentPage, t, lang, setLang, isDarkMode, setIsDarkMode, handleBatClick, walletAddress, onConnectWallet, chainId, onGalleryClick }) => {
-          const Checkmark = () => <span className="text-green-500 dark:text-green-400">✔</span>;
-          const Cross = () => <span className="text-red-500 dark:text-red-400 opacity-70">✘</span>;
+          const Checkmark = () => React.createElement('span', { className: "text-green-500 dark:text-green-400" }, "✔");
+          const Cross = () => React.createElement('span', { className: "text-red-500 dark:text-red-400 opacity-70" }, "✘");
       
           return (
-              <div className="relative flex flex-col items-center min-h-screen bg-paper dark:bg-dark-bg bg-grid-light dark:bg-grid-dark text-ink dark:text-dark-text p-4 transition-colors duration-300">
-                  <Header setPage={setPage} currentPage={currentPage} t={t} lang={lang} setLang={setLang} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} handleBatClick={handleBatClick} walletAddress={walletAddress} onConnectWallet={onConnectWallet} chainId={chainId} onGalleryClick={onGalleryClick} className="absolute top-0 left-0 right-0 z-30" />
-                  <main className="w-full max-w-5xl mx-auto flex-grow animate-fade-in pt-24 sm:pt-32 pb-24 px-4">
-                      <h1 className="text-4xl sm:text-5xl font-serif-sc font-bold tracking-wider mb-8 text-shadow text-center">{t.braveScoringTitle}</h1>
-                      <div className="text-center"><VoteButton t={t} className="mb-8" /></div>
-                      <div className="bg-paper/60 dark:bg-dark-bg/60 backdrop-blur-sm border border-ink/10 dark:border-dark-text/20 rounded-lg p-6 sm:p-8 text-left text-ink dark:text-dark-text/90">
-                          <p className="text-lg mb-6 text-ink-light dark:text-dark-text/90">{t.braveScoringIntro}</p>
-                          <div className="overflow-x-auto">
-                              <table className="w-full text-base border-collapse">
-                                  <thead>
-                                      <tr className="border-b border-ink/20 dark:border-dark-text/30">
-                                          <th className="p-3 text-left font-semibold">{t.scoringItem}</th>
-                                          <th className="p-3 text-center font-semibold w-28">{t.scoringMaxPoints}</th>
-                                          <th className="p-3 text-center font-semibold w-28">{t.scoringThisWebsite}</th>
-                                      </tr>
-                                  </thead>
-                                  <tbody>
-                                      {/* Content & Media */}
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td colSpan="3" className="p-3 pt-6 font-bold text-vermilion">{t.scoringContentMedia} (25)</td></tr>
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td className="p-3">{t.scoringVideos}</td><td className="p-3 text-center">5</td><td className="p-3 text-center"><Checkmark /></td></tr>
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td className="p-3">{t.scoringImages}</td><td className="p-3 text-center">5</td><td className="p-3 text-center"><Checkmark /></td></tr>
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td className="p-3">{t.scoringExtLinks}</td><td className="p-3 text-center">5</td><td className="p-3 text-center"><Checkmark /></td></tr>
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td className="p-3">{t.scoringCTAs}</td><td className="p-3 text-center">5</td><td className="p-3 text-center"><Checkmark /></td></tr>
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td className="p-3">{t.scoringSocial}</td><td className="p-3 text-center">5</td><td className="p-3 text-center"><Checkmark /></td></tr>
+              React.createElement('div', { className: "relative flex flex-col items-center min-h-screen bg-paper dark:bg-dark-bg bg-grid-light dark:bg-grid-dark text-ink dark:text-dark-text p-4 transition-colors duration-300" },
+                  React.createElement(Header, { setPage: setPage, currentPage: currentPage, t: t, lang: lang, setLang: setLang, isDarkMode: isDarkMode, setIsDarkMode: setIsDarkMode, handleBatClick: handleBatClick, walletAddress: walletAddress, onConnectWallet: onConnectWallet, chainId: chainId, onGalleryClick: onGalleryClick, className: "absolute top-0 left-0 right-0 z-30" }),
+                  React.createElement('main', { className: "w-full max-w-5xl mx-auto flex-grow animate-fade-in pt-24 sm:pt-32 pb-24 px-4" },
+                      React.createElement('h1', { className: "text-4xl sm:text-5xl font-serif-sc font-bold tracking-wider mb-8 text-shadow text-center" }, t.braveScoringTitle),
+                      React.createElement('div', { className: "text-center" }, React.createElement(VoteButton, { t: t, className: "mb-8" })),
+                      React.createElement('div', { className: "bg-paper/60 dark:bg-dark-bg/60 backdrop-blur-sm border border-ink/10 dark:border-dark-text/20 rounded-lg p-6 sm:p-8 text-left text-ink dark:text-dark-text/90" },
+                          React.createElement('p', { className: "text-lg mb-6 text-ink-light dark:text-dark-text/90" }, t.braveScoringIntro),
+                          React.createElement('div', { className: "overflow-x-auto" },
+                              React.createElement('table', { className: "w-full text-base border-collapse" },
+                                  React.createElement('thead', null,
+                                      React.createElement('tr', { className: "border-b border-ink/20 dark:border-dark-text/30" },
+                                          React.createElement('th', { className: "p-3 text-left font-semibold" }, t.scoringItem),
+                                          React.createElement('th', { className: "p-3 text-center font-semibold w-28" }, t.scoringMaxPoints),
+                                          React.createElement('th', { className: "p-3 text-center font-semibold w-28" }, t.scoringThisWebsite)
+                                      )
+                                  ),
+                                  React.createElement('tbody', null,
+                                      /* Content & Media */
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { colSpan: "3", className: "p-3 pt-6 font-bold text-vermilion" }, t.scoringContentMedia, " (25)")),
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { className: "p-3" }, t.scoringVideos), React.createElement('td', { className: "p-3 text-center" }, "5"), React.createElement('td', { className: "p-3 text-center" }, React.createElement(Checkmark, null))),
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { className: "p-3" }, t.scoringImages), React.createElement('td', { className: "p-3 text-center" }, "5"), React.createElement('td', { className: "p-3 text-center" }, React.createElement(Checkmark, null))),
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { className: "p-3" }, t.scoringExtLinks), React.createElement('td', { className: "p-3 text-center" }, "5"), React.createElement('td', { className: "p-3 text-center" }, React.createElement(Checkmark, null))),
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { className: "p-3" }, t.scoringCTAs), React.createElement('td', { className: "p-3 text-center" }, "5"), React.createElement('td', { className: "p-3 text-center" }, React.createElement(Checkmark, null))),
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { className: "p-3" }, t.scoringSocial), React.createElement('td', { className: "p-3 text-center" }, "5"), React.createElement('td', { className: "p-3 text-center" }, React.createElement(Checkmark, null))),
 
-                                      {/* Integrations & Interactivity */}
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td colSpan="3" className="p-3 pt-6 font-bold text-vermilion">{t.scoringIntegrations} (20)</td></tr>
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20">
-                                          <td className="p-3">
-                                              {t.scoringBraveIntegrations.title}
-                                              <ul className="list-disc list-inside pl-4 mt-2 text-sm text-ink/80 dark:text-dark-text/80 space-y-1">
-                                                  <li><a href="https://etherscan.io/token/0x0d8775f648430679a709e98d2b0cb6250d2887ef" target="_blank" rel="noopener noreferrer" className="hover:text-vermilion underline">{t.scoringBraveIntegrations.item1}</a> (<Checkmark />)</li>
-                                                  <li><a href="https://brave.com/search/api/" target="_blank" rel="noopener noreferrer" className="hover:text-vermilion underline">{t.scoringBraveIntegrations.item2}</a> (<Checkmark />)</li>
-                                                  <li><a href="https://wallet-docs.brave.com/" target="_blank" rel="noopener noreferrer" className="hover:text-vermilion underline">{t.scoringBraveIntegrations.item3}</a> (<Checkmark />)</li>
-                                              </ul>
-                                          </td>
-                                          <td className="p-3 align-top text-center">10</td>
-                                          <td className="p-3 align-top text-center"><Checkmark /></td>
-                                      </tr>
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td className="p-3">{t.scoringAnimations}</td><td className="p-3 text-center">5</td><td className="p-3 text-center"><Checkmark /></td></tr>
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td className="p-3">{t.scoringNav}</td><td className="p-3 text-center">5</td><td className="p-3 text-center"><Checkmark /></td></tr>
+                                      /* Integrations & Interactivity */
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { colSpan: "3", className: "p-3 pt-6 font-bold text-vermilion" }, t.scoringIntegrations, " (20)")),
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" },
+                                          React.createElement('td', { className: "p-3" },
+                                              t.scoringBraveIntegrations.title,
+                                              React.createElement('ul', { className: "list-disc list-inside pl-4 mt-2 text-sm text-ink/80 dark:text-dark-text/80 space-y-1" },
+                                                  React.createElement('li', null, React.createElement('a', { href: "https://etherscan.io/token/0x0d8775f648430679a709e98d2b0cb6250d2887ef", target: "_blank", rel: "noopener noreferrer", className: "hover:text-vermilion underline" }, t.scoringBraveIntegrations.item1), " (", React.createElement(Checkmark, null), ")"),
+                                                  React.createElement('li', null, React.createElement('a', { href: "https://brave.com/search/api/", target: "_blank", rel: "noopener noreferrer", className: "hover:text-vermilion underline" }, t.scoringBraveIntegrations.item2), " (", React.createElement(Checkmark, null), ")"),
+                                                  React.createElement('li', null, React.createElement('a', { href: "https://wallet-docs.brave.com/", target: "_blank", rel: "noopener noreferrer", className: "hover:text-vermilion underline" }, t.scoringBraveIntegrations.item3), " (", React.createElement(Checkmark, null), ")")
+                                              )
+                                          ),
+                                          React.createElement('td', { className: "p-3 align-top text-center" }, "10"),
+                                          React.createElement('td', { className: "p-3 align-top text-center" }, React.createElement(Checkmark, null))
+                                      ),
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { className: "p-3" }, t.scoringAnimations), React.createElement('td', { className: "p-3 text-center" }, "5"), React.createElement('td', { className: "p-3 text-center" }, React.createElement(Checkmark, null))),
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { className: "p-3" }, t.scoringNav), React.createElement('td', { className: "p-3 text-center" }, "5"), React.createElement('td', { className: "p-3 text-center" }, React.createElement(Checkmark, null))),
 
-                                      {/* Design */}
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td colSpan="3" className="p-3 pt-6 font-bold text-vermilion">{t.scoringDesign} (35)</td></tr>
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td className="p-3">{t.scoringLayout}</td><td className="p-3 text-center">15</td><td className="p-3 text-center"><Checkmark /></td></tr>
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td className="p-3">{t.scoringBranding}</td><td className="p-3 text-center">15</td><td className="p-3 text-center"><Checkmark /></td></tr>
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td className="p-3">{t.scoringCopy}</td><td className="p-3 text-center">5</td><td className="p-3 text-center"><Checkmark /></td></tr>
+                                      /* Design */
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { colSpan: "3", className: "p-3 pt-6 font-bold text-vermilion" }, t.scoringDesign, " (35)")),
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { className: "p-3" }, t.scoringLayout), React.createElement('td', { className: "p-3 text-center" }, "15"), React.createElement('td', { className: "p-3 text-center" }, React.createElement(Checkmark, null))),
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { className: "p-3" }, t.scoringBranding), React.createElement('td', { className: "p-3 text-center" }, "15"), React.createElement('td', { className: "p-3 text-center" }, React.createElement(Checkmark, null))),
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { className: "p-3" }, t.scoringCopy), React.createElement('td', { className: "p-3 text-center" }, "5"), React.createElement('td', { className: "p-3 text-center" }, React.createElement(Checkmark, null))),
 
-                                      {/* Functionality & Performance */}
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td colSpan="3" className="p-3 pt-6 font-bold text-vermilion">{t.scoringFunctionality} (15)</td></tr>
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td className="p-3">{t.scoringNoBrokenLinks}</td><td className="p-3 text-center">5</td><td className="p-3 text-center"><Checkmark /></td></tr>
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td className="p-3">{t.scoringMobile}</td><td className="p-3 text-center">10</td><td className="p-3 text-center"><Checkmark /></td></tr>
+                                      /* Functionality & Performance */
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { colSpan: "3", className: "p-3 pt-6 font-bold text-vermilion" }, t.scoringFunctionality, " (15)")),
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { className: "p-3" }, t.scoringNoBrokenLinks), React.createElement('td', { className: "p-3 text-center" }, "5"), React.createElement('td', { className: "p-3 text-center" }, React.createElement(Checkmark, null))),
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { className: "p-3" }, t.scoringMobile), React.createElement('td', { className: "p-3 text-center" }, "10"), React.createElement('td', { className: "p-3 text-center" }, React.createElement(Checkmark, null))),
 
-                                      {/* Miscellaneous */}
-                                      <tr className="border-b border-ink/10 dark:border-dark-text/20"><td colSpan="3" className="p-3 pt-6 font-bold text-vermilion">{t.scoringMisc} (10)</td></tr>
-                                      <tr><td className="p-3">{t.scoringOriginality}</td><td className="p-3 text-center">10</td><td className="p-3 text-center"><Checkmark /></td></tr>
-                                  </tbody>
-                              </table>
-                          </div>
-                      </div>
-                  </main>
-                  <footer className="absolute bottom-4 sm:bottom-8 text-center text-sm text-ink-light dark:text-dark-text/70">
-                      <div className="border border-ink/10 dark:border-dark-text/30 rounded-lg p-3 sm:p-4 bg-paper/50 dark:bg-dark-bg/50 backdrop-blur-sm">
-                          <p>{t.competitionNotice}</p>
-                          <a href="https://get.unstoppabledomains.com/brave-website-competition/" target="_blank" rel="noopener noreferrer" className="text-vermilion hover:underline">
-                              {t.learnMore}
-                          </a>
-                      </div>
-                  </footer>
-              </div>
+                                      /* Miscellaneous */
+                                      React.createElement('tr', { className: "border-b border-ink/10 dark:border-dark-text/20" }, React.createElement('td', { colSpan: "3", className: "p-3 pt-6 font-bold text-vermilion" }, t.scoringMisc, " (10)")),
+                                      React.createElement('tr', null, React.createElement('td', { className: "p-3" }, t.scoringOriginality), React.createElement('td', { className: "p-3 text-center" }, "10"), React.createElement('td', { className: "p-3 text-center" }, React.createElement(Checkmark, null)))
+                                  )
+                              )
+                          )
+                      )
+                  ),
+                  React.createElement('footer', { className: "absolute bottom-4 sm:bottom-8 text-center text-sm text-ink-light dark:text-dark-text/70" },
+                      React.createElement('div', { className: "border border-ink/10 dark:border-dark-text/30 rounded-lg p-3 sm:p-4 bg-paper/50 dark:bg-dark-bg/50 backdrop-blur-sm" },
+                          React.createElement('p', null, t.competitionNotice),
+                          React.createElement('a', { href: "https://get.unstoppabledomains.com/brave-website-competition/", target: "_blank", rel: "noopener noreferrer", className: "text-vermilion hover:underline" },
+                              t.learnMore
+                          )
+                      )
+                  )
+              )
           );
       };
       const AboutPage = ({ setPage, currentPage, t, lang, setLang, isDarkMode, setIsDarkMode, handleBatClick, walletAddress, onConnectWallet, chainId, onGalleryClick }) => {
           return (
-              <div className="relative flex flex-col items-center min-h-screen bg-paper dark:bg-dark-bg bg-grid-light dark:bg-grid-dark text-ink dark:text-dark-text p-4 transition-colors duration-300">
-                  <Header setPage={setPage} currentPage={currentPage} t={t} lang={lang} setLang={setLang} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} handleBatClick={handleBatClick} walletAddress={walletAddress} onConnectWallet={onConnectWallet} chainId={chainId} onGalleryClick={onGalleryClick} className="absolute top-0 left-0 right-0 z-30" />
-                  <main className="w-full max-w-4xl mx-auto flex-grow animate-fade-in pt-24 sm:pt-32 pb-24 px-4">
-                      <div className="bg-paper/60 dark:bg-dark-bg/60 backdrop-blur-sm border border-ink/10 dark:border-dark-text/20 rounded-lg p-6 sm:p-8 text-left text-ink-light dark:text-dark-text/90">
-                          <h1 className="text-3xl sm:text-4xl font-serif-sc font-bold tracking-wider mb-6 text-shadow text-vermilion">{t.aboutApp}</h1>
-                          <p className="mb-4">{t.aboutAppDesc}</p>
-                          <ul className="list-disc list-inside space-y-1 text-sm text-ink-light/80 dark:text-dark-text/80 mb-8">
-                              <li>{t.poweredByGemini}</li>
-                              <li>{t.braveCompetition}</li>
-                          </ul>
+              React.createElement('div', { className: "relative flex flex-col items-center min-h-screen bg-paper dark:bg-dark-bg bg-grid-light dark:bg-grid-dark text-ink dark:text-dark-text p-4 transition-colors duration-300" },
+                  React.createElement(Header, { setPage: setPage, currentPage: currentPage, t: t, lang: lang, setLang: setLang, isDarkMode: isDarkMode, setIsDarkMode: setIsDarkMode, handleBatClick: handleBatClick, walletAddress: walletAddress, onConnectWallet: onConnectWallet, chainId: chainId, onGalleryClick: onGalleryClick, className: "absolute top-0 left-0 right-0 z-30" }),
+                  React.createElement('main', { className: "w-full max-w-4xl mx-auto flex-grow animate-fade-in pt-24 sm:pt-32 pb-24 px-4" },
+                      React.createElement('div', { className: "bg-paper/60 dark:bg-dark-bg/60 backdrop-blur-sm border border-ink/10 dark:border-dark-text/20 rounded-lg p-6 sm:p-8 text-left text-ink-light dark:text-dark-text/90" },
+                          React.createElement('h1', { className: "text-3xl sm:text-4xl font-serif-sc font-bold tracking-wider mb-6 text-shadow text-vermilion" }, t.aboutApp),
+                          React.createElement('p', { className: "mb-4" }, t.aboutAppDesc),
+                          React.createElement('ul', { className: "list-disc list-inside space-y-1 text-sm text-ink-light/80 dark:text-dark-text/80 mb-8" },
+                              React.createElement('li', null, t.poweredByGemini),
+                              React.createElement('li', null, t.braveCompetition)
+                          ),
 
-                          <hr className="my-8 border-ink/10 dark:border-dark-text/20" />
+                          React.createElement('hr', { className: "my-8 border-ink/10 dark:border-dark-text/20" }),
 
-                          <h2 className="text-2xl sm:text-3xl font-serif-sc font-bold tracking-wider mb-4 text-shadow text-vermilion">{t.acknowledgements}</h2>
-                          <p className="mb-6">{t.acknowledgementsDesc}</p>
-                           <a href="https://github.com/guanny/Singknature" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 mb-6 text-ink-light dark:text-dark-text/80 hover:text-vermilion transition-colors">
-                              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
-                              <span>{t.viewOnGithub}</span>
-                          </a>
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-                              <div>
-                                  <h3 className="font-semibold text-lg mb-2 text-ink dark:text-dark-text">{t.techStack}</h3>
-                                  <ul className="list-disc list-inside space-y-1 text-sm">
-                                      <li><a href="https://react.dev/" target="_blank" rel="noopener noreferrer" className="hover:text-vermilion">React.js</a></li>
-                                      <li><a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer" className="hover:text-vermilion">Tailwind CSS</a></li>
-                                      <li><a href="https://babeljs.io/" target="_blank" rel="noopener noreferrer" className="hover:text-vermilion">Babel</a></li>
-                                      <li><a href="https://brave.com/search/api/" target="_blank" rel="noopener noreferrer" className="hover:text-vermilion">Brave Search API</a></li>
-                                  </ul>
-                              </div>
-                              <div>
-                                  <h3 className="font-semibold text-lg mb-2 text-ink dark:text-dark-text">{t.assetsAndInspiration}</h3>
-                                  <ul className="list-disc list-inside space-y-1 text-sm">
-                                      <li><a href="https://digitalarchive.npm.gov.tw" target="_blank" rel="noopener noreferrer" className="hover:text-vermilion">國立故宮博物院 開放資料</a></li>
-                                      <li><a href="https://commons.wikimedia.org" target="_blank" rel="noopener noreferrer" className="hover:text-vermilion">Wikimedia Commons</a></li>
-                                      <li><a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer" className="hover:text-vermilion">Google Fonts</a></li>
-                                      <li>{t.authorAvatarCredit}</li>
-                                      <li>{t.inspirationCredit}</li>
-                                  </ul>
-                              </div>
-                          </div>
+                          React.createElement('h2', { className: "text-2xl sm:text-3xl font-serif-sc font-bold tracking-wider mb-4 text-shadow text-vermilion" }, t.acknowledgements),
+                          React.createElement('p', { className: "mb-8" }, t.acknowledgementsDesc),
+                          React.createElement('div', { className: "grid grid-cols-1 md:grid-cols-2 gap-8 mb-8" },
+                              React.createElement('div', null,
+                                  React.createElement('h3', { className: "font-semibold text-lg mb-2 text-ink dark:text-dark-text" }, t.techStack),
+                                  React.createElement('ul', { className: "list-disc list-inside space-y-1 text-sm" },
+                                      React.createElement('li', null, React.createElement('a', { href: "https://react.dev/", target: "_blank", rel: "noopener noreferrer", className: "hover:text-vermilion" }, "React.js")),
+                                      React.createElement('li', null, React.createElement('a', { href: "https://tailwindcss.com/", target: "_blank", rel: "noopener noreferrer", className: "hover:text-vermilion" }, "Tailwind CSS")),
+                                      React.createElement('li', null, React.createElement('a', { href: "https://babeljs.io/", target: "_blank", rel: "noopener noreferrer", className: "hover:text-vermilion" }, "Babel")),
+                                      React.createElement('li', null, React.createElement('a', { href: "https://brave.com/search/api/", target: "_blank", rel: "noopener noreferrer", className: "hover:text-vermilion" }, "Brave Search API"))
+                                  )
+                              ),
+                              React.createElement('div', null,
+                                  React.createElement('h3', { className: "font-semibold text-lg mb-2 text-ink dark:text-dark-text" }, t.assetsAndInspiration),
+                                  React.createElement('ul', { className: "list-disc list-inside space-y-1 text-sm" },
+                                      React.createElement('li', null, React.createElement('a', { href: "https://digitalarchive.npm.gov.tw", target: "_blank", rel: "noopener noreferrer", className: "hover:text-vermilion" }, "國立故宮博物院 開放資料")),
+                                      React.createElement('li', null, React.createElement('a', { href: "https://commons.wikimedia.org", target: "_blank", rel: "noopener noreferrer", className: "hover:text-vermilion" }, "Wikimedia Commons")),
+                                      React.createElement('li', null, React.createElement('a', { href: "https://fonts.google.com/", target: "_blank", rel: "noopener noreferrer", className: "hover:text-vermilion" }, "Google Fonts")),
+                                      React.createElement('li', null, t.authorAvatarCredit),
+                                      React.createElement('li', null, t.inspirationCredit)
+                                  )
+                              )
+                          ),
                           
-                          <hr className="my-8 border-ink/10 dark:border-dark-text/20" />
+                          React.createElement('hr', { className: "my-8 border-ink/10 dark:border-dark-text/20" }),
 
-                          <h2 className="text-2xl sm:text-3xl font-serif-sc font-bold tracking-wider mb-6 text-shadow text-vermilion">{t.aboutAuthor}</h2>
-                          <div className="flex flex-col sm:flex-row items-center gap-6">
-                              <a href="https://ud.me/guanny.brave" target="_blank" rel="noopener noreferrer" className="block transition-transform hover:scale-105 flex-shrink-0">
-                                  <img src="https://i2.seadn.io/ethereum/0xe41bea6888f771a0c16d7188284522b76c135252/3d96a2344485f0814f1d7ea1d7b801/153d96a2344485f0814f1d7ea1d7b801.png?w=1000" alt="Guanny's Unstoppable Domains Avatar" className="w-32 h-32 border-2 border-ink/10 dark:border-dark-text/20 shadow-lg" style={{ clipPath: 'url(#rounded-hexagon)' }} />
-                              </a>
-                              <div>
-                                  <p className="mb-4">{t.aboutAuthorDesc}</p>
-                                  <div className="flex items-center justify-start gap-4">
-                                      <a href="https://x.com/kuan_guanny" target="_blank" rel="noopener noreferrer" className="text-ink-light/80 dark:text-dark-text/80 hover:text-vermilion transition-colors"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 16 16"><path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z"/></svg></a>
-                                      <a href="https://www.instagram.com/kuan_guanny/" target="_blank" rel="noopener noreferrer" className="text-ink-light/80 dark:text-dark-text/80 hover:text-vermilion transition-colors"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.703.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.942a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 8 0zm0 1.442c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.598.92 2.5 2.5 0 0 1-.92.598c-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.598-.92c-.11-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.232s.008-2.389.046-3.232c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.843-.038 1.096-.047 3.232-.047zM8 3.882a4.118 4.118 0 1 0 0 8.236 4.118 4.118 0 0 0 0-8.236zM8 10.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm4.75-6.844a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92z"/></svg></a>
-                                      <a href="https://www.youtube.com/@kuan_guanny" target="_blank" rel="noopener noreferrer" className="text-ink-light/80 dark:text-dark-text/80 hover:text-vermilion transition-colors"><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="currentColor" viewBox="0 0 576 512"><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 42.3 48.3 48.6C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.9 48.3-48.6 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232 340V172l144 84-144 84z"/></svg></a>
-                                  </div>
-                              </div>
-                          </div>
-                      </div>
-                  </main>
-              </div>
+                          React.createElement('h2', { className: "text-2xl sm:text-3xl font-serif-sc font-bold tracking-wider mb-6 text-shadow text-vermilion" }, t.aboutAuthor),
+                          React.createElement('div', { className: "flex flex-col sm:flex-row items-center gap-6" },
+                              React.createElement('a', { href: "https://ud.me/guanny.brave", target: "_blank", rel: "noopener noreferrer", className: "block transition-transform hover:scale-105 flex-shrink-0" },
+                                  React.createElement('img', { src: "https://i2.seadn.io/ethereum/0xe41bea6888f771a0c16d7188284522b76c135252/3d96a2344485f0814f1d7ea1d7b801/153d96a2344485f0814f1d7ea1d7b801.png?w=1000", alt: "Guanny's Unstoppable Domains Avatar", className: "w-32 h-32 border-2 border-ink/10 dark:border-dark-text/20 shadow-lg", style: { clipPath: 'url(#rounded-hexagon)' } })
+                              ),
+                              React.createElement('div', null,
+                                  React.createElement('p', { className: "mb-4" }, t.aboutAuthorDesc),
+                                  React.createElement('div', { className: "flex items-center justify-start gap-4" },
+                                      React.createElement('a', { href: "https://x.com/kuan_guanny", target: "_blank", rel: "noopener noreferrer", className: "text-ink-light/80 dark:text-dark-text/80 hover:text-vermilion transition-colors", title: "X (Twitter)" }, React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "currentColor", viewBox: "0 0 16 16" }, React.createElement('path', { d: "M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865l8.875 11.633Z" }))),
+                                      React.createElement('a', { href: "https://www.instagram.com/kuan_guanny/", target: "_blank", rel: "noopener noreferrer", className: "text-ink-light/80 dark:text-dark-text/80 hover:text-vermilion transition-colors", title: "Instagram" }, React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "currentColor", viewBox: "0 0 16 16" }, React.createElement('path', { d: "M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.703.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.942a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 8 0zm0 1.442c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.598.92 2.5 2.5 0 0 1-.92.598c-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.598-.92c-.11-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.232s.008-2.389.046-3.232c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.843-.038 1.096-.047 3.232-.047zM8 3.882a4.118 4.118 0 1 0 0 8.236 4.118 4.118 0 0 0 0-8.236zM8 10.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm4.75-6.844a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92z" }))),
+                                      React.createElement('a', { href: "https://www.youtube.com/@kuan_guanny", target: "_blank", rel: "noopener noreferrer", className: "text-ink-light/80 dark:text-dark-text/80 hover:text-vermilion transition-colors", title: "YouTube" }, React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "currentColor", viewBox: "0 0 576 512" }, React.createElement('path', { d: "M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 42.3 48.3 48.6C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.9 48.3-48.6 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zM232 340V172l144 84-144 84z" }))),
+                                      React.createElement('a', { href: "https://github.com/kuan0426/Signknature-", target: "_blank", rel: "noopener noreferrer", className: "text-ink-light/80 dark:text-dark-text/80 hover:text-vermilion transition-colors", title: "GitHub" }, React.createElement('svg', { xmlns: "http://www.w3.org/2000/svg", className: "h-6 w-6", fill: "currentColor", viewBox: "0 0 16 16" }, React.createElement('path', { d: "M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z" })))
+                                  )
+                              )
+                          ),
+
+                          React.createElement('hr', { className: "my-8 border-ink/10 dark:border-dark-text/20" }),
+
+                          React.createElement('div', { className: "flex items-center justify-center gap-4 opacity-70" },
+                            React.createElement('a', { href: "https://validator.w3.org/nu/?doc=https%3A%2F%2Fipfs.io%2Fipfs%2FQmeC8usK9WX6XkaEYHxx6wAoaMT52aoNz8oZA5Cn4K7RaL%2F", target: "_blank", rel: "noopener noreferrer", title: "Valid HTML 5" },
+                                React.createElement('img', { src: "https://upload.wikimedia.org/wikipedia/commons/b/bb/W3C_HTML5_certified.png?20130208111413", alt: "Valid HTML 5", className: "h-8" })
+                            ),
+                            React.createElement('a', { href: "https://creativecommons.org/licenses/by-nc-sa/4.0/", target: "_blank", rel: "noopener noreferrer", title: "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License" },
+                                React.createElement('img', { src: "https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png", alt: "Creative Commons License", className: "h-8" })
+                            )
+                          )
+
+                      )
+                  )
+              )
           );
       };
       const CanvasPage = ({ setPage, currentPage, t, lang, setLang, isDarkMode, setIsDarkMode, handleBatClick, walletAddress, onConnectWallet, chainId, onGalleryClick }) => {
@@ -1416,32 +1423,32 @@
           const onDownload = () => brushCanvasRef.current?.downloadPNG();
 
           return (
-            <div className="flex flex-col h-screen bg-paper dark:bg-dark-bg">
-              <Header 
-                  setPage={setPage} currentPage={currentPage} t={t} lang={lang} 
-                  setLang={setLang} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} 
-                  handleBatClick={handleBatClick} walletAddress={walletAddress} onConnectWallet={onConnectWallet} chainId={chainId} onGalleryClick={onGalleryClick}
-                  className="border-b border-ink/10 dark:border-dark-text/10 shadow-sm relative z-30" 
-              />
-              <main className="flex-grow relative overflow-hidden touch-none">
-                  <div className="absolute inset-0 bg-grid-light dark:bg-grid-dark"></div>
-                  <div className="absolute inset-0">
-                      <BrushCanvas ref={brushCanvasRef} brushColor={brushColor} brushSize={brushSize} waterAmount={waterAmount} onHistoryChange={handleHistoryChange} />
-                  </div>
-              </main>
-              <footer className="p-4 bg-paper/80 dark:bg-dark-bg/80 backdrop-blur-sm border-t border-ink/10 dark:border-dark-text/10 shadow-inner relative z-20">
-                <Controls 
-                  brushColor={brushColor} setBrushColor={setBrushColor} brushSize={brushSize} setBrushSize={setBrushSize} 
-                  waterAmount={waterAmount} setWaterAmount={setWaterAmount}
-                  onClear={onClear} onUndo={onUndo} onRedo={onRedo} 
-                  onDownloadClick={onDownload}
-                  onMintClick={() => setIsNftModalOpen(true)}
-                  canUndo={canUndo} canRedo={canRedo} t={t} 
-                  onInstructions={() => setIsHowToUseModalOpen(true)} />
-              </footer>
-              {isNftModalOpen && <NFTModal onClose={() => setIsNftModalOpen(false)} t={t} walletAddress={walletAddress} onConnectWallet={onConnectWallet} />}
-              {isHowToUseModalOpen && <HowToUseModal onClose={() => setIsHowToUseModalOpen(false)} t={t} />}
-            </div>
+            React.createElement('div', { className: "flex flex-col h-screen bg-paper dark:bg-dark-bg" },
+              React.createElement(Header, {
+                  setPage: setPage, currentPage: currentPage, t: t, lang: lang,
+                  setLang: setLang, isDarkMode: isDarkMode, setIsDarkMode: setIsDarkMode,
+                  handleBatClick: handleBatClick, walletAddress: walletAddress, onConnectWallet: onConnectWallet, chainId: chainId, onGalleryClick: onGalleryClick,
+                  className: "border-b border-ink/10 dark:border-dark-text/10 shadow-sm relative z-30"
+              }),
+              React.createElement('main', { className: "flex-grow relative overflow-hidden touch-none" },
+                  React.createElement('div', { className: "absolute inset-0 bg-grid-light dark:bg-grid-dark" }),
+                  React.createElement('div', { className: "absolute inset-0" },
+                      React.createElement(BrushCanvas, { ref: brushCanvasRef, brushColor: brushColor, brushSize: brushSize, waterAmount: waterAmount, onHistoryChange: handleHistoryChange })
+                  )
+              ),
+              React.createElement('footer', { className: "p-4 bg-paper/80 dark:bg-dark-bg/80 backdrop-blur-sm border-t border-ink/10 dark:border-dark-text/10 shadow-inner relative z-20" },
+                React.createElement(Controls, {
+                  brushColor: brushColor, setBrushColor: setBrushColor, brushSize: brushSize, setBrushSize: setBrushSize,
+                  waterAmount: waterAmount, setWaterAmount: setWaterAmount,
+                  onClear: onClear, onUndo: onUndo, onRedo: onRedo,
+                  onDownloadClick: onDownload,
+                  onMintClick: () => setIsNftModalOpen(true),
+                  canUndo: canUndo, canRedo: canRedo, t: t,
+                  onInstructions: () => setIsHowToUseModalOpen(true) })
+              ),
+              isNftModalOpen && React.createElement(NFTModal, { onClose: () => setIsNftModalOpen(false), t: t, walletAddress: walletAddress, onConnectWallet: onConnectWallet }),
+              isHowToUseModalOpen && React.createElement(HowToUseModal, { onClose: () => setIsHowToUseModalOpen(false), t: t })
+            )
           );
       };
        const FontsPage = ({ setPage, currentPage, t, lang, setLang, isDarkMode, setIsDarkMode, handleBatClick, walletAddress, onConnectWallet, chainId, onGalleryClick }) => {
@@ -1511,110 +1518,110 @@
           };
 
           return (
-              <div className="relative flex flex-col items-center min-h-screen bg-paper dark:bg-dark-bg bg-grid-light dark:bg-grid-dark text-ink dark:text-dark-text p-4 transition-colors duration-300">
-                  <Header setPage={setPage} currentPage={currentPage} t={t} lang={lang} setLang={setLang} isDarkMode={isDarkMode} setIsDarkMode={setIsDarkMode} handleBatClick={handleBatClick} walletAddress={walletAddress} onConnectWallet={onConnectWallet} chainId={chainId} onGalleryClick={onGalleryClick} className="absolute top-0 left-0 right-0 z-30" />
-                  <main className="w-full max-w-7xl mx-auto flex-grow animate-fade-in pt-24 sm:pt-32 pb-24 px-4">
-                      <h1 className="text-4xl sm:text-5xl font-serif-sc font-bold tracking-wider mb-4 text-shadow text-center">{t.fonts}</h1>
-                      <p className="text-center text-md sm:text-lg max-w-3xl mx-auto text-ink-light dark:text-dark-text/90 mb-12">{t.fontsIntro}</p>
+              React.createElement('div', { className: "relative flex flex-col items-center min-h-screen bg-paper dark:bg-dark-bg bg-grid-light dark:bg-grid-dark text-ink dark:text-dark-text p-4 transition-colors duration-300" },
+                  React.createElement(Header, { setPage: setPage, currentPage: currentPage, t: t, lang: lang, setLang: setLang, isDarkMode: isDarkMode, setIsDarkMode: setIsDarkMode, handleBatClick: handleBatClick, walletAddress: walletAddress, onConnectWallet: onConnectWallet, chainId: chainId, onGalleryClick: onGalleryClick, className: "absolute top-0 left-0 right-0 z-30" }),
+                  React.createElement('main', { className: "w-full max-w-7xl mx-auto flex-grow animate-fade-in pt-24 sm:pt-32 pb-24 px-4" },
+                      React.createElement('h1', { className: "text-4xl sm:text-5xl font-serif-sc font-bold tracking-wider mb-4 text-shadow text-center" }, t.fonts),
+                      React.createElement('p', { className: "text-center text-md sm:text-lg max-w-3xl mx-auto text-ink-light dark:text-dark-text/90 mb-12" }, t.fontsIntro),
                       
-                      <div className="mb-12">
-                          <div className="relative max-w-2xl mx-auto">
-                              <input 
-                                  type="search" 
-                                  value={searchQuery}
-                                  onChange={(e) => setSearchQuery(e.target.value)}
-                                  onKeyDown={(e) => {if (e.key === 'Enter') handleSearch();}}
-                                  placeholder={t.searchPlaceholder}
-                                  className="w-full pl-5 pr-28 py-3 text-base bg-paper/80 dark:bg-dark-bg/80 border-2 border-ink/20 dark:border-dark-text/20 rounded-full focus:ring-2 focus:ring-vermilion focus:border-vermilion outline-none transition-colors"
-                              />
-                              <button 
-                                  onClick={handleSearch} 
-                                  disabled={isLoadingSearch || !searchQuery.trim()}
-                                  className="absolute right-2 top-1/2 -translate-y-1/2 px-5 py-2 bg-vermilion text-white font-semibold rounded-full hover:bg-red-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-200 flex items-center justify-center h-[80%]"
-                              >
-                                  {isLoadingSearch ? (
-                                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                                  ) : t.searchButton}
-                              </button>
-                          </div>
+                      React.createElement('div', { className: "mb-12" },
+                          React.createElement('div', { className: "relative max-w-2xl mx-auto" },
+                              React.createElement('input', {
+                                  type: "search",
+                                  value: searchQuery,
+                                  onChange: (e) => setSearchQuery(e.target.value),
+                                  onKeyDown: (e) => {if (e.key === 'Enter') handleSearch();},
+                                  placeholder: t.searchPlaceholder,
+                                  className: "w-full pl-5 pr-28 py-3 text-base bg-paper/80 dark:bg-dark-bg/80 border-2 border-ink/20 dark:border-dark-text/20 rounded-full focus:ring-2 focus:ring-vermilion focus:border-vermilion outline-none transition-colors"
+                              }),
+                              React.createElement('button', {
+                                  onClick: handleSearch,
+                                  disabled: isLoadingSearch || !searchQuery.trim(),
+                                  className: "absolute right-2 top-1/2 -translate-y-1/2 px-5 py-2 bg-vermilion text-white font-semibold rounded-full hover:bg-red-700 disabled:bg-gray-400 disabled:cursor-not-allowed transition-all duration-200 flex items-center justify-center h-[80%]"
+                              },
+                                  isLoadingSearch ? (
+                                      React.createElement('div', { className: "w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin" })
+                                  ) : t.searchButton
+                              )
+                          ),
 
-                          <div className="mt-8 max-w-3xl mx-auto text-left">
-                              {isLoadingSearch && <p className="text-center text-ink-light dark:text-dark-text/80">{t.loading}</p>}
-                              {searchError && <p className="text-center text-vermilion">{t.searchError}</p>}
-                              {searchResults && (
+                          React.createElement('div', { className: "mt-8 max-w-3xl mx-auto text-left" },
+                              isLoadingSearch && React.createElement('p', { className: "text-center text-ink-light dark:text-dark-text/80" }, t.loading),
+                              searchError && React.createElement('p', { className: "text-center text-vermilion" }, t.searchError),
+                              searchResults && (
                                   searchResults.length > 0 ? (
-                                      <>
-                                      <ul className="space-y-6">
-                                          {searchResults.map((result, index) => (
-                                              <li key={index} className="p-4 bg-paper/40 dark:bg-dark-bg/40 border border-ink/10 dark:border-dark-text/10 rounded-lg transition-shadow hover:shadow-md">
-                                                  <a href={result.url} target="_blank" rel="noopener noreferrer" className="block">
-                                                      <h3 className="text-lg font-semibold text-vermilion hover:underline">{result.title}</h3>
-                                                  </a>
-                                                  <a href={result.url} target="_blank" rel="noopener noreferrer" className="text-sm text-green-700 dark:text-green-500 truncate block hover:underline" style={{direction: 'ltr'}}>{result.url}</a>
-                                                  <p className="mt-1 text-sm text-ink-light dark:text-dark-text/80">{result.description}</p>
-                                              </li>
-                                          ))}
-                                      </ul>
-                                      <p className="text-center text-xs mt-4 text-ink-light/70 dark:text-dark-text/70">{t.braveSearchCredit}</p>
-                                      </>
+                                      React.createElement(React.Fragment, null,
+                                      React.createElement('ul', { className: "space-y-6" },
+                                          ...searchResults.map((result, index) => (
+                                              React.createElement('li', { key: index, className: "p-4 bg-paper/40 dark:bg-dark-bg/40 border border-ink/10 dark:border-dark-text/10 rounded-lg transition-shadow hover:shadow-md" },
+                                                  React.createElement('a', { href: result.url, target: "_blank", rel: "noopener noreferrer", className: "block" },
+                                                      React.createElement('h3', { className: "text-lg font-semibold text-vermilion hover:underline" }, result.title)
+                                                  ),
+                                                  React.createElement('a', { href: result.url, target: "_blank", rel: "noopener noreferrer", className: "text-sm text-green-700 dark:text-green-500 truncate block hover:underline", style: {direction: 'ltr'} }, result.url),
+                                                  React.createElement('p', { className: "mt-1 text-sm text-ink-light dark:text-dark-text/80" }, result.description)
+                                              )
+                                          ))
+                                      ),
+                                      React.createElement('p', { className: "text-center text-xs mt-4 text-ink-light/70 dark:text-dark-text/70" }, t.braveSearchCredit)
+                                      )
                                   ) : (
-                                      <p className="text-center text-ink-light dark:text-dark-text/80">{t.noResults}</p>
+                                      React.createElement('p', { className: "text-center text-ink-light dark:text-dark-text/80" }, t.noResults)
                                   )
-                              )}
-                          </div>
-                      </div>
+                              )
+                          )
+                      ),
 
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                          {calligraphers.map((c, calligrapherIndex) => (
-                              <div key={c.id} className="bg-paper/60 dark:bg-dark-bg/60 backdrop-blur-sm border border-ink/10 dark:border-dark-text/20 rounded-lg p-6 flex flex-col sm:flex-row gap-6 transition-shadow hover:shadow-xl">
-                                  <div className="flex-shrink-0">
-                                      <img src={c.portrait} alt={c.name} className="w-32 h-32 object-cover rounded-full mx-auto sm:mx-0 border-2 border-ink/10 dark:border-dark-text/20 shadow-lg" />
-                                  </div>
-                                  <div className="text-center sm:text-left">
-                                      <h2 className="text-2xl font-serif-sc font-bold text-vermilion">{c.name}</h2>
-                                      <p className="text-sm text-ink-light dark:text-dark-text/80 mb-3">{c.era}</p>
-                                      <p className="text-sm mb-1"><strong className="text-ink dark:text-dark-text">{c.style.split('：')[0]}</strong>: {c.style.split('：')[1]}</p>
-                                      <p className="text-sm mb-4"><strong className="text-ink dark:text-dark-text">{c.features.split('：')[0]}</strong>: {c.features.split('：')[1]}</p>
-                                      <div className="text-sm">
-                                          <p className="font-semibold mb-1 text-ink dark:text-dark-text">代表作品:</p>
-                                          <ul className="flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-x-4 gap-y-1">
-                                              {c.works.map((work, workIndex) => (
-                                                  <li key={work.name}>
-                                                      <button 
-                                                          onClick={() => openLightbox(calligrapherIndex, workIndex)}
-                                                          onMouseEnter={(e) => handleMouseEnter(e, work.url)}
-                                                          onMouseMove={handleMouseMove}
-                                                          onMouseLeave={handleMouseLeave}
-                                                          className="text-vermilion/80 hover:text-vermilion hover:underline"
-                                                      >
-                                                          {work.name}
-                                                      </button>
-                                                  </li>
-                                              ))}
-                                          </ul>
-                                      </div>
-                                  </div>
-                              </div>
-                          ))}
-                      </div>
-                  </main>
-                  {preview.visible && (
-                    <div 
-                        className="pointer-events-none fixed z-50 transition-opacity duration-200 ease-out"
-                        style={{ ...preview.style, opacity: 0 }}
-                    >
-                        <img src={preview.url} alt="preview" className="w-auto h-auto max-w-[200px] max-h-[200px] rounded-md shadow-2xl border-2 border-white bg-paper" />
-                    </div>
-                  )}
-                  {lightbox.isOpen && (
-                    <LightboxModal 
-                        images={lightbox.images}
-                        currentIndex={lightbox.currentIndex}
-                        setCurrentIndex={(updater) => setLightbox(prev => ({...prev, currentIndex: typeof updater === 'function' ? updater(prev.currentIndex) : updater}))}
-                        onClose={() => setLightbox(prev => ({ ...prev, isOpen: false }))}
-                    />
-                  )}
-              </div>
+                      React.createElement('div', { className: "grid grid-cols-1 md:grid-cols-2 gap-8" },
+                          ...calligraphers.map((c, calligrapherIndex) => (
+                              React.createElement('div', { key: c.id, className: "bg-paper/60 dark:bg-dark-bg/60 backdrop-blur-sm border border-ink/10 dark:border-dark-text/20 rounded-lg p-6 flex flex-col sm:flex-row gap-6 transition-shadow hover:shadow-xl" },
+                                  React.createElement('div', { className: "flex-shrink-0" },
+                                      React.createElement('img', { src: c.portrait, alt: c.name, className: "w-32 h-32 object-cover rounded-full mx-auto sm:mx-0 border-2 border-ink/10 dark:border-dark-text/20 shadow-lg" })
+                                  ),
+                                  React.createElement('div', { className: "text-center sm:text-left" },
+                                      React.createElement('h2', { className: "text-2xl font-serif-sc font-bold text-vermilion" }, c.name),
+                                      React.createElement('p', { className: "text-sm text-ink-light dark:text-dark-text/80 mb-3" }, c.era),
+                                      React.createElement('p', { className: "text-sm mb-1" }, React.createElement('strong', { className: "text-ink dark:text-dark-text" }, c.style.split('：')[0]), ": ", c.style.split('：')[1]),
+                                      React.createElement('p', { className: "text-sm mb-4" }, React.createElement('strong', { className: "text-ink dark:text-dark-text" }, c.features.split('：')[0]), ": ", c.features.split('：')[1]),
+                                      React.createElement('div', { className: "text-sm" },
+                                          React.createElement('p', { className: "font-semibold mb-1 text-ink dark:text-dark-text" }, "代表作品:"),
+                                          React.createElement('ul', { className: "flex flex-col sm:flex-row items-center justify-center sm:justify-start gap-x-4 gap-y-1" },
+                                              ...c.works.map((work, workIndex) => (
+                                                  React.createElement('li', { key: work.name },
+                                                      React.createElement('button', {
+                                                          onClick: () => openLightbox(calligrapherIndex, workIndex),
+                                                          onMouseEnter: (e) => handleMouseEnter(e, work.url),
+                                                          onMouseMove: handleMouseMove,
+                                                          onMouseLeave: handleMouseLeave,
+                                                          className: "text-vermilion/80 hover:text-vermilion hover:underline"
+                                                      },
+                                                          work.name
+                                                      )
+                                                  )
+                                              ))
+                                          )
+                                      )
+                                  )
+                              )
+                          ))
+                      )
+                  ),
+                  preview.visible && (
+                    React.createElement('div', {
+                        className: "pointer-events-none fixed z-50 transition-opacity duration-200 ease-out",
+                        style: { ...preview.style, opacity: 0 }
+                    },
+                        React.createElement('img', { src: preview.url, alt: "preview", className: "w-auto h-auto max-w-[200px] max-h-[200px] rounded-md shadow-2xl border-2 border-white bg-paper" })
+                    )
+                  ),
+                  lightbox.isOpen && (
+                    React.createElement(LightboxModal, {
+                        images: lightbox.images,
+                        currentIndex: lightbox.currentIndex,
+                        setCurrentIndex: (updater) => setLightbox(prev => ({...prev, currentIndex: typeof updater === 'function' ? updater(prev.currentIndex) : updater})),
+                        onClose: () => setLightbox(prev => ({ ...prev, isOpen: false }))
+                    })
+                  )
+              )
           );
       };
 
@@ -1705,21 +1712,21 @@
           const renderPage = () => {
               const props = { setPage, currentPage: page, t, lang, setLang, isDarkMode, setIsDarkMode, handleBatClick, walletAddress, chainId, onConnectWallet: handleConnectWallet, onGalleryClick: () => setIsGalleryModalOpen(true) };
               switch(page) {
-                  case 'canvas': return <CanvasPage {...props} />;
-                  case 'brave-scoring': return <BraveScoringPage {...props} />;
-                  case 'about': return <AboutPage {...props} />;
-                  case 'fonts': return <FontsPage {...props} />;
-                  case 'welcome': default: return <WelcomePage {...props} />;
+                  case 'canvas': return React.createElement(CanvasPage, props);
+                  case 'brave-scoring': return React.createElement(BraveScoringPage, props);
+                  case 'about': return React.createElement(AboutPage, props);
+                  case 'fonts': return React.createElement(FontsPage, props);
+                  case 'welcome': default: return React.createElement(WelcomePage, props);
               }
           };
 
           return (
-            <div className="font-serif-sc text-ink dark:text-dark-text bg-paper dark:bg-dark-bg transition-colors duration-300">
-              {renderPage()}
-              {isWalletInfoModalOpen && <WalletInfoModal onClose={() => setIsWalletInfoModalOpen(false)} t={t} />}
-              {isBatModalOpen && <BatModal onClose={() => setIsBatModalOpen(false)} t={t} />}
-              {isGalleryModalOpen && <FeatureUnavailableModal onClose={() => setIsGalleryModalOpen(false)} t={t} />}
-            </div>
+            React.createElement('div', { className: "font-serif-sc text-ink dark:text-dark-text bg-paper dark:bg-dark-bg transition-colors duration-300" },
+              renderPage(),
+              isWalletInfoModalOpen && React.createElement(WalletInfoModal, { onClose: () => setIsWalletInfoModalOpen(false), t: t }),
+              isBatModalOpen && React.createElement(BatModal, { onClose: () => setIsBatModalOpen(false), t: t }),
+              isGalleryModalOpen && React.createElement(FeatureUnavailableModal, { onClose: () => setIsGalleryModalOpen(false), t: t })
+            )
           );
       };
 
@@ -1728,7 +1735,7 @@
       // =================================================================================
       const container = document.getElementById('root');
       const root = ReactDOM.createRoot(container);
-      root.render(<App />);
+      root.render(React.createElement(App, null));
     </script>
 </body>
 </html>
